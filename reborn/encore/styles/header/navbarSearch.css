@@ -1,0 +1,45 @@
+._navbar-search {
+  width: 317px;
+}
+@media screen and (max-width: 375px) {
+  ._navbar-search {
+    width: 100%;
+  }
+}
+._navbar-search ._answers {
+  margin-top: 8px;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+._navbar-search ._answers ._answer-link {
+  width: 100%;
+  padding: 10px 12px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+}
+._navbar-search ._answers ._answer-link ._hint {
+  background: #2088B3;
+  font-weight: 400;
+  -webkit-text-decoration: white;
+          text-decoration: white;
+}
+._navbar-search input {
+  border: 0;
+  border-radius: 6px;
+  z-index: -1;
+}
+@media screen and (max-width: 1140px) {
+  ._navbar-search input {
+    height: 29px;
+  }
+}
+._navbar-search img {
+  height: 65%;
+  top: 0;
+  right: 8px;
+  bottom: 0;
+}/*# sourceMappingURL=navbarSearch.css.map */

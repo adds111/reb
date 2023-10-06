@@ -1,0 +1,123 @@
+<form method="post" id="orderForm" action="/?id=6577221" name="info" enctype="multipart/form-data">
+    <table cellpadding="3">
+        <tr>
+            <td>
+                <input class="form-control _form-input" name="name" type="text" placeholder="Контактное лицо: ФИО" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="form-control _form-input" name="company" type="text" placeholder="Название организации">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="form-control _form-input" name="phone" type="tel" placeholder="Телефон" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="form-control _form-input" name="email" type="email" placeholder="E-mail" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="form-control _form-input" name="address" type="text" placeholder="Адрес доставки">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="_choose-group">
+                    <span>Способ доставки:</span>
+                    <select class="form-select _form-input" type="text" name="delivery" aria-describedby="basic-addon1">
+                        <option value="Курьер" selected>Курьерской службой до двери</option>
+                        <option value="Самовывоз">Самовывоз</option>
+                        <option value="Уточнить">Не выбран</option>
+                    </select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea class="form-control _form-input" name="message" rows="4" style="width: 100%" placeholder="Сообщение"></textarea>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h5 class="_form-title">Реквизиты</h5>
+    <span class="_form-text">*Необязательно заполнять, если Вы уже являетесь нашим клиентом</span>
+    <table class="rekvizity" style="margin: 10px; width: 100%; position: relative;">
+        <tr>
+            <div class="input-group align-items-center w-100 flex-nowrap">
+                <label class="_form-span me-2" style="white-space: nowrap;" for="fileInput">Прикрепить файлом</label>
+                <label class="input-group-text justify-content-center me-2" for="fileInput">Выберите файл</label>
+                <label class="_form-span" for="fileInput" id="fileInputName">Файл не выбран</label>
+                <input type="file" class="form-control" id="fileInput" name="rekvizity" style="display: none;">
+            </div>
+        </tr>
+        <tr>
+            <td>
+                <input class="form-control _form-input" type="text" name="rekvCompany" placeholder="Наименование компании" style="display: none;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="form-control _form-input" type="text" name="rekvAddress" placeholder="Юридический адрес" style="display: none;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="form-control _form-input" type="text" name="rekvInn" placeholder="ИНН" style="display: none;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input name="rekvKpp"  value="<?=$form['rekvKpp']?>" type="text" placeholder="КПП" style="display: none;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input name="rekvBank"  value="<?=$form['rekvBank']?>" type="text" placeholder="Банк" style="display: none;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input name="rekvBik"  value="<?=$form['rekvBik']?>" type="text" placeholder="БИК Банка" style="display: none;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input name="rekvSchet"  value="<?=$form['rekvSchet']?>" type="text" placeholder="Расчетный счет" style="display: none;">
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <p class="_form-text">
+                    <span style="color: #0096BB; font-family: Inter; font-size: 13px; font-style: normal; font-weight: 400; line-height: 22.5px;">Внимание! Заказ Вы можете оплатить банковской картой.</span>
+                    <br> Для этого укажите в сообщении к заказу, что будете оплачивать банковской картой. Менеджер пришлет Вам ссылку на оплату в письме
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <button class="btn _form-button-submit w-100" type="submit" value="">Отправить заказ</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-check _form-agreement">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked required>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Нажимая на кнопку “Отправить заказ”, вы принимаете условия <a href=".">договора-оферты</a> и даете согласие на обработку своих персональных данных
+                        в соответствии с <a href="/agreement">политикой конфиденциальности</a>.
+                    </label>
+                </div>
+            </td>
+        </tr>
+    </table>
+</form>

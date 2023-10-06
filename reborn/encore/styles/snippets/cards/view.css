@@ -1,0 +1,71 @@
+._card-category-title {
+  display: flex;
+  font-family: Inter;
+  font-style: normal;
+  line-height: 19px;
+  overflow: hidden;
+  color: #0876A6;
+  font-size: 19px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+._card-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(366px, 1fr));
+  -moz-column-gap: 53px;
+       column-gap: 53px;
+  row-gap: 56px;
+}
+._card-view ._card-item {
+  display: flex;
+  margin: 24px 12px;
+  border-radius: 12px;
+  filter: drop-shadow(1px 2px 13px rgba(0, 0, 0, 0.02));
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  overflow: hidden;
+}
+@media screen and (max-width: 1052px) {
+  ._card-view ._card-item {
+    height: 180px;
+  }
+}
+._card-view ._card-item ._item-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 20px;
+  width: 131px;
+}
+._card-view ._card-item ._item-block ._item-image {
+  display: flex;
+  flex-direction: column;
+  width: 131px;
+  overflow: hidden;
+}
+._card-view ._card-item ._item-block ._item-price {
+  color: #868686;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+._card-view ._card-item ._item-description {
+  height: 226px;
+}
+._card-view ._card-item ._item-description ._text, ._card-view ._card-item ._item-description ._description-title {
+  color: #212121;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  overflow: hidden;
+}
+._card-view ._card-item ._item-description ._description-title {
+  color: #0876A6;
+  font-size: 17px;
+  font-weight: 600;
+}/*# sourceMappingURL=view.css.map */

@@ -1,0 +1,70 @@
+._our-offices {
+    background: #EAEAEA;
+}
+
+._regional-offices {
+    h1 {
+        color: #000;
+        font-family: Inter;
+        font-size: 23px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 2em;
+    }
+
+    ._map-holder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding: 76px 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    ._office {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 20px;
+
+        p {
+            color: #0E0E0E;
+            font-family: Inter;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px;
+
+            ._text-title {
+                font-weight: 700;
+            }
+        }
+
+        p:first-child {
+            width: 320px;
+        }
+
+        @media screen and (max-width: 1140px) {
+            p:first-child {
+                width: 270px;
+            }
+        }
+
+        @media screen and (max-width: 720px) {
+            p:first-child {
+                width: 190px;
+            }
+        }
+
+        @media screen and (max-width: 490px) {
+            grid-template-columns: 1fr;
+
+            p:first-child {
+                width: 100%;
+                margin: 2em 0 1em;
+            }
+        }
+    }
+}

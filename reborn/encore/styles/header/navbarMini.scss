@@ -1,0 +1,175 @@
+@media screen and (max-width: 1920px) {
+    ._navbar-mini {
+        ._navigation {
+            ._link {
+                padding: 6px unquote("calc(23px + (100vw - 1140px) * (9 / 780))") !important;
+
+                ._link-node {
+                    margin-left: unquote("calc(-1 * calc(23px + (100vw - 1140px) * (9 / 780)))");
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    ._navbar-mini {
+        ._navigation {
+            ._link {
+                padding: 6px 23px !important;
+
+                ._link-node {
+                    margin-left: -23px;
+                }
+            }
+        }
+    }
+}
+
+._navbar-mini {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    height: 50px;
+    width: 100%;
+    background: rgba(0, 0, 0, .65) !important;
+    z-index: 1;
+
+    @media screen and (max-width: 1140px) {
+        justify-content: end;
+    }
+
+    ._navigation {
+        column-gap: 12px;
+        padding-right: 3em;
+
+        @media screen and (max-width: 1140px) {
+            display: none;
+        }
+
+        ._node-transparent {
+            background: white;
+            display: inherit;
+            flex-direction: column;
+        }
+
+        ._link {
+            &:hover ._link-node {
+                display: flex !important;
+            }
+
+            ._link-node {
+                display: none;
+                position: absolute;
+                padding-top: 16px;
+                background: transparent;
+
+                &._active {
+                    display: flex;
+                }
+            }
+
+            ._link-item ._link-node-sub {
+                top: 0;
+                left: 100%;
+            }
+
+            ._link-item {
+                display: flex;
+                justify-content: space-between;
+                column-gap: 10px;
+                min-width: 300px;
+                padding: 12px 17px 12px 27px;
+                text-align: left;
+                border-radius: 0;
+                border: 0;
+                cursor: pointer;
+
+                a {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    column-gap: 10px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: #000000;
+                }
+
+                &:hover {
+                    background: #CEE4ED;
+                }
+
+                ._link-node-sub {
+                    display: none;
+                    position: absolute;
+                    padding-top: 16px;
+                    background: transparent;
+                    min-height: 100%;
+                    cursor: default;
+
+                    &._active {
+                        display: flex;
+                    }
+
+                    ._node-transparent-sub {
+                        display: inherit;
+                        flex-direction: column;
+                        background: white;
+                        width: 100%;
+                    }
+                }
+
+                &:hover > ._link-node-sub {
+                    display: flex !important;
+                    width: 100%;
+                }
+            }
+        }
+
+        ._link {
+            @extend .btn !optional;
+
+            &-text {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                color: #FFFFFF;
+                margin: 0;
+            }
+
+            &:hover {
+                background: white !important;
+                background-color: white !important;
+
+                ._link-text {
+                    color: black !important;
+                }
+            }
+        }
+
+        ._link.active {
+            background: white !important;
+            background-color: white !important;
+            border: 1px solid white !important;
+
+            ._link-text {
+                color: black !important;
+            }
+        }
+    }
+
+    /* Navbar Search*/
+    @import "navbarSearch";
+}

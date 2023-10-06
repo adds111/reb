@@ -1,0 +1,49 @@
+form {
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	display: inline-block;
+	min-height: 300px;
+}
+
+.ttl {
+	padding: 5px;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input {
+	padding: 5px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+button {
+	cursor: pointer;
+}
+
+.output {
+	display: inline-block;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	display: inline-block;
+	min-width: 300px;
+	vertical-align: top;
+	min-height: 300px;
+}
+
+.clc {
+	margin: auto;
+	display: inline-block;
+}
+
+select {
+	padding: 5px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	display: block;
+}

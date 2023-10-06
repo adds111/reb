@@ -1,0 +1,93 @@
+._contacts-view {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+._contacts-view p {
+  margin: 0;
+}
+._contacts-view ._block-text {
+  margin-bottom: 25px;
+}
+._contacts-view ._block-text ._text + ._text {
+  margin-top: 25px;
+}
+._contacts-view ._title {
+  margin-bottom: 25px;
+}
+._contacts-view ._title h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+._contacts-view ._l-g {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 540px) {
+  ._contacts-view ._l-g {
+    grid-template-columns: 1fr;
+    row-gap: 35px;
+  }
+}
+._contacts-view ._text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #0E0E0E;
+}
+._contacts-view ._link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #0876A6;
+}
+._contacts-view ._fat {
+  font-weight: 600;
+}
+._contacts-view ul {
+  list-style: none;
+  padding: 0;
+}
+._contacts-view ._geo-map {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  width: 100%;
+  margin: 65px 0;
+}
+._contacts-view ._geo-map iframe {
+  width: 100%;
+  min-height: 559px;
+}
+._contacts-view ._geo-map ._map-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #333333;
+}
+._contacts-view ._geo-map ._map-text-alert {
+  font-weight: 500;
+  color: #FFFFFF;
+}
+._contacts-view ._geo-map ._map-alert {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 28px;
+  background: #0F6D9C;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.17);
+  border-radius: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  align-items: center;
+}/*# sourceMappingURL=contactsContent.css.map */

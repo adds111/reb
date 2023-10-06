@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 320" style="enable-background:new 0 0 200 320;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#333333;}
+	.st1{fill:#666666;}
+	.st2{fill:url(#SVGID_1_);}
+</style>
+<path class="st0" d="M120.8,87.1c-40.6,0-73.6,32.8-73.6,73.4s32.8,73.6,73.6,73.6s73.6-32.8,73.6-73.6S161.4,87.1,120.8,87.1z
+	 M120.8,217.3c-31.2,0-56.6-25.4-56.6-56.6s25.4-56.6,56.6-56.6s56.6,25.4,56.6,56.6S152,217.3,120.8,217.3z"/>
+<rect x="7.4" y="87.1" class="st1" width="27.5" height="146.9"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="21.1905" y1="87.6664" x2="21.1905" y2="234.5347" gradientTransform="matrix(1 0 0 -1 0 321)">
+	<stop  offset="0" style="stop-color:#333333"/>
+	<stop  offset="0.2129" style="stop-color:#353535;stop-opacity:0.6143"/>
+	<stop  offset="0.3177" style="stop-color:#3D3D3D;stop-opacity:0.4245"/>
+	<stop  offset="0.3989" style="stop-color:#4A4A4A;stop-opacity:0.2774"/>
+	<stop  offset="0.468" style="stop-color:#5D5D5D;stop-opacity:0.1524"/>
+	<stop  offset="0.5287" style="stop-color:#757575;stop-opacity:4.243582e-02"/>
+	<stop  offset="0.5521" style="stop-color:#808080;stop-opacity:0"/>
+	<stop  offset="0.5724" style="stop-color:#737373;stop-opacity:4.532301e-02"/>
+	<stop  offset="0.6195" style="stop-color:#5C5C5C;stop-opacity:0.1504"/>
+	<stop  offset="0.6733" style="stop-color:#494949;stop-opacity:0.2707"/>
+	<stop  offset="0.7373" style="stop-color:#3D3D3D;stop-opacity:0.4134"/>
+	<stop  offset="0.821" style="stop-color:#353535;stop-opacity:0.6004"/>
+	<stop  offset="1" style="stop-color:#333333"/>
+</linearGradient>
+<rect x="7.4" y="86.5" class="st2" width="27.5" height="146.9"/>
+<rect x="7.4" y="87.1" width="27.5" height="17.2"/>
+<rect x="7.4" y="216.8" width="27.5" height="17.2"/>
+<image style="overflow:visible;" width="200" height="200" xlink:href="../../pepsi.png"  transform="matrix(5.778151e-02 0 0 5.778151e-02 50.1608 154.1213)">
+</image>
+</svg>

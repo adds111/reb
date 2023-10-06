@@ -1,0 +1,111 @@
+._news-rows {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+._news-rows ._rows-item {
+  display: grid;
+  grid-template-columns: 234px auto;
+  -moz-column-gap: 55px;
+       column-gap: 55px;
+  padding: 18px 9px;
+  background: #FFFFFF;
+  width: 100%;
+  transition: 0.5s;
+}
+@media screen and (min-width: 633px) {
+  ._news-rows ._rows-item {
+    border: 1px solid #ECECEC;
+    box-shadow: 1px 2px 13px rgba(0, 0, 0, 0.02);
+    border-radius: 7px;
+  }
+}
+@media screen and (max-width: 1052px) {
+  ._news-rows ._rows-item {
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+  }
+}
+@media screen and (max-width: 720px) {
+  ._news-rows ._rows-item {
+    padding: 18px 27px;
+  }
+}
+@media screen and (max-width: 632px) {
+  ._news-rows ._rows-item {
+    grid-template-columns: 1fr;
+    -moz-column-gap: unset;
+         column-gap: unset;
+    row-gap: 2em;
+  }
+}
+._news-rows ._rows-item:hover {
+  background-color: #ECECEC;
+  transition: 0.5s;
+}
+._news-rows ._rows-item ._news {
+  display: flex;
+  -moz-column-gap: 55px;
+       column-gap: 55px;
+}
+@media screen and (max-width: 720px) {
+  ._news-rows ._rows-item ._news {
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 35px;
+  }
+}
+@media screen and (max-width: 632px) {
+  ._news-rows ._rows-item ._news {
+    border: 1px solid #ECECEC;
+    box-shadow: 1px 2px 13px rgba(0, 0, 0, 0.02);
+    border-radius: 7px;
+    padding: 18px 27px;
+  }
+}
+._news-rows ._rows-item ._news-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  width: 234px;
+  height: 137px;
+  overflow: hidden;
+}
+@media screen and (max-width: 720px) {
+  ._news-rows ._rows-item ._news-image {
+    width: unset;
+  }
+}
+._news-rows ._rows-item ._news-image img {
+  max-width: 394px;
+  max-height: 137px;
+}
+._news-rows ._rows-item ._news-content {
+  display: flex;
+  flex-direction: column;
+}
+._news-rows ._rows-item ._news-content ._time {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #999999;
+}
+._news-rows ._rows-item ._news-content ._longtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  color: #000000;
+}
+._news-rows ._rows-item ._news-content ._description {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #7B7B7B;
+}/*# sourceMappingURL=rows-view.css.map */

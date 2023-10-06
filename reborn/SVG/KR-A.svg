@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 160" style="enable-background:new 0 0 100 160;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#B3B3B3;}
+	.st1{clip-path:url(#SVGID_00000044138273806573962080000000076339754737864108_);}
+	.st2{clip-path:url(#SVGID_00000040561324134965552600000015475368216016843651_);}
+	.st3{fill:#58595B;}
+</style>
+<path class="st0" d="M42.9,40.3C21,40.3,3.2,58,3.2,80s17.8,39.7,39.7,39.7S82.6,101.9,82.6,80S64.8,40.3,42.9,40.3z M42.9,99.5
+	c-10.8,0-19.5-8.8-19.5-19.5s8.7-19.5,19.5-19.5S62.4,69.2,62.4,80S53.6,99.5,42.9,99.5z"/>
+<g>
+	<g>
+		<g>
+			<defs>
+				<rect id="SVGID_1_" x="90.8" y="40.3" width="6" height="20.2"/>
+			</defs>
+			<clipPath id="SVGID_00000147912333916090234870000010191558378275683975_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_00000147912333916090234870000010191558378275683975_);">
+				
+					<image style="overflow:visible;enable-background:new    ;" width="1200" height="900" xlink:href="../../Фитинги/Резьбовые/Металл.jpg"  transform="matrix(0.1112 0 0 0.1112 -9.9809 29.8441)">
+				</image>
+			</g>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<g>
+			<defs>
+				<rect id="SVGID_00000160890786229016037690000010160289998659687812_" x="90.8" y="99.5" width="6" height="20.2"/>
+			</defs>
+			<clipPath id="SVGID_00000031165899496234822160000009500412278310090927_">
+				<use xlink:href="#SVGID_00000160890786229016037690000010160289998659687812_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_00000031165899496234822160000009500412278310090927_);">
+				
+					<image style="overflow:visible;enable-background:new    ;" width="1200" height="900" xlink:href="../../Фитинги/Резьбовые/Металл.jpg"  transform="matrix(0.1112 0 0 0.1112 -8.9468 32.429)">
+				</image>
+			</g>
+		</g>
+	</g>
+</g>
+<rect x="90.8" y="60.5" class="st3" width="6" height="38.9"/>
+<image style="overflow:visible;" width="200" height="200" xlink:href="../../pepsi.png"  transform="matrix(4.757356e-02 0 0 4.757356e-02 67.2512 75.2426)">
+</image>
+</svg>

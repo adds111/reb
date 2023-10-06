@@ -1,0 +1,608 @@
+._webinar-container-view {
+    @extend ._margin-bottom;
+    @extend ._margin-lr-sides;
+    @extend ._padding-lr-sides;
+    @extend ._max-width;
+    @extend ._min-width;
+    @extend ._media-lr-sides_node;
+}
+
+.vebinars-grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+
+  .vebinar-grid-item {
+    cursor: pointer;
+    position: relative;
+    padding: 15px 15px 35px 15px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 15px 0 rgba(50, 50, 50, .5);
+    -moz-box-shadow: 3px 3px 15px 0 rgba(50, 50, 50, .5);
+    box-shadow: 3px 3px 15px 0 rgba(50, 50, 50, .5);
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.01);
+
+      .vebinar-is-selected {
+        color: green;
+        font-weight: bold;
+      }
+    }
+
+    &.checked {
+      background-color: rgba(109, 255, 102, 0.27);
+    }
+
+    &.upcoming {
+      .vebinar-date {
+        font-weight: bold;
+        color: green;
+      }
+
+      .select-vebinar {
+        color: #FFF;
+        font-weight: bold;
+        background-color: #0096BB;
+      }
+    }
+
+    .vebinar-image {
+      max-width: 100%;
+      max-height: 150px;
+    }
+
+    .vebinar-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 15px 0 25px;
+    }
+
+    .vebinar-date {
+      text-align: right;
+      margin: 0 0 10px;
+      font-size: 11px;
+      font-weight: 300;
+    }
+
+    .vebinar-is-selected {
+      float: left;
+      color: #000;
+      position: relative;
+      top: 6px;
+    }
+
+    .vebinar-watchers-counter {
+      position: absolute;
+      left: 15px;
+      bottom: 50px;
+      font-size: 12px;
+    }
+
+    .select-vebinar, .watch-vebinar {
+      background: #f2f9f8;
+      border-radius: 4px;
+      color: #0096BB;
+      display: inline-block;
+      font-family: Inter Medium, Inter Regular, sans-serif;
+      font-size: 14px;
+      padding: 8px 16px;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      position: absolute;
+      left: 15px;
+      bottom: 15px;
+
+      &:hover {
+        background-color: #0096BB;
+        color: #f2f9f8;
+      }
+    }
+
+    .vebinar-watchers {
+      position: absolute;
+      right: 15px;
+      bottom: 10px;
+      font-size: 12px;
+      color: #858585;
+
+      &:hover {
+        color: #000;
+      }
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+  .head-wapka, .head-line-1 {
+    display: none;
+  }
+
+  #panel {
+    overflow: hidden;
+  }
+
+}
+
+@media screen and (max-width: 999px) {
+  .container-outer {
+    max-width: 100%;
+    min-width: initial;
+  }
+  .container-inner {
+    width: 100%;
+  }
+
+  .head-pc {
+    display: none;
+  }
+  .head-mobile {
+    display: block;
+
+    .menu-btn {
+      padding: 10px 15px;
+      box-sizing: border-box;
+    }
+
+    .right {
+      text-align: right;
+      padding: 10px 15px 0 0;
+
+      img {
+        max-width: 150px;
+      }
+    }
+  }
+
+  .vebinars-grids {
+    grid-gap: 15px;
+  }
+
+  .comment-area, .footer {
+    .container-inner {
+      max-width: calc(100% - 30px);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .vebinars-grids {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media screen and (max-width: 599px) {
+  .vebinars-grids {
+    grid-template-columns: 1fr;
+  }
+}
+
+.breadcrumbs {
+  // display: none;
+}
+
+#registration-form {
+  width: 490px;
+  max-width: 100%;
+  margin: auto;
+  padding: 30px;
+  display: none;
+}
+
+#vebinar-details-description {
+  padding-top: 60px;
+  font-size: 20px;
+  display: none;
+  line-height: 1.4;
+}
+
+#registration-form input, #registration-form button {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #9c9999;
+  height: 45px;
+  font-size: 18px;
+  text-indent: 15px;
+}
+
+#registration-form button {
+  cursor: pointer;
+  text-indent: 0;
+  background-color: #0096bb;
+  color: #FFF;
+  text-transform: uppercase;
+  border: none !important;
+}
+
+#registration-form .input {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#registration-form .alert {
+  font-size: 12px;
+  line-height: 1;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 2px);
+  color: red;
+}
+
+#registration-form h2.success {
+  text-align: center;
+  font-size: 36px;
+  margin: auto;
+  color: green;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.title {
+  text-align: center;
+  font-size: 22px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 15px auto;
+}
+
+
+#webinar-description {
+  display: inline-block;
+  width: auto;
+  text-align: left;
+}
+
+#registration-form {
+  box-sizing: border-box;
+}
+
+.modal-footer.calendar-options {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.modal-footer.calendar-options button {
+  cursor: pointer;
+  border: none !important;
+  background: none;
+  padding: 0;
+  margin: 0 15px;
+}
+
+@media screen and (max-width: 599px) {
+  .modal-footer.calendar-options button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+    width: 50%;
+  }
+  .modal-footer.calendar-options button img {
+    margin-top: 10px;
+    max-width: 90%;
+  }
+}
+
+.modal-footer.calendar-options button p {
+  margin-bottom: 0;
+}
+
+.webinar-registration-success {
+  text-align: center;
+}
+
+.webinar-registration-success h2 {
+  font-size: 40px;
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 900;
+  color: darkgreen;
+}
+
+@media screen and (max-width: 599px) {
+  .webinar-registration-success h2 {
+    font-size: 30px;
+  }
+}
+
+.webinar-registration-success p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.webinar-registration-success h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 30px 0 0;
+}
+
+.modal-backdrop.show {
+  z-index: -1;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.look-vebinar-details {
+  cursor: pointer;
+}
+
+.container-inner {
+  //width: 1200px;
+}
+
+.note {
+  position: relative;
+
+  &:before, &:after {
+    display: block;
+    position: absolute;
+    content: "";
+    outline: none;
+    background-color: #fff;
+    border: 1px solid #000;
+    opacity: 0;
+  }
+
+  &:before {
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    left: 70%;
+    top: 0;
+    z-index: 999;
+    border-top: none;
+    border-left: none;
+  }
+}
+
+
+#choose-vebinar {
+
+  &:after {
+    left: 60%;
+    top: -25px;
+    content: "Выберите вебинар(ы)";
+    border-radius: 5px;
+    padding: 7px 12px;
+    font-size: 14px;
+    line-height: 1;
+    color: #000;
+    font-weight: normal;
+    white-space: nowrap;
+  }
+
+  &.alerted {
+    background-color: red;
+
+    &:before, &:after {
+      opacity: 1;
+    }
+  }
+
+}
+
+.registration-result {
+
+  &:hover {
+    background-color: rgba(237, 237, 237, 0.52);
+  }
+
+  td:last-child {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      right: 10px;
+      bottom: 3px;
+      font-size: 12px;
+      display: block;
+      white-space: nowrap;
+      font-weight: bold;
+    }
+
+  }
+
+  &.result-success {
+    background-color: rgba(153, 238, 173, 0.33);
+
+    td:last-child:after {
+      color: #36592c;
+      content: 'Успешно зарегистрирован';
+    }
+  }
+
+  &.result-false {
+    background-color: rgba(153, 238, 173, 0.33);
+
+    td:last-child:after {
+      color: #b50000;
+      content: 'Вы уже зарегистрировались на данный вебинар ранее.';
+    }
+  }
+
+    .fa.fa-square-o.select-vebinar-animation {
+        font-weight: 900;
+        animation-name: flashing;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes flashing {
+  from,
+  50% {
+    color: red;
+  }
+  to {
+    color: initial
+  }
+}
+
+.modal-form, .modal-watch {
+  .modal-dialog {
+    width: 1200px;
+    max-width: 90%;
+
+    iframe {
+      margin: 20px auto;
+    }
+  }
+}
+
+#vebinar-description {
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+}
+
+.content-background {
+  padding-bottom: 0;
+}
+
+.vebinar-content-inner {
+  iframe {
+    max-width: 100%;
+  }
+
+  #vebinar-img-preview {
+    max-width: 600px;
+    display: block;
+    margin: auto;
+  }
+
+  @media screen and (max-width: 767px) {
+    #vebinar-img-preview {
+      max-width: 100% !important;
+    }
+    iframe {
+      width: 100% !important;
+      min-width: 100% !important;
+    }
+  }
+}
+
+.banner {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+
+  span {
+    padding: 10px 15px;
+    background-color: #29A154;
+    font-weight: bold;
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+    display: inline-block;
+    color: #FFF;
+    border: 1px solid #00000069;
+  }
+}
+
+.bd-example {
+  padding: 1rem 0 2rem;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  border-width: .2rem;
+  font-size: 18px;
+  user-select: none;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.35em 0.5em .4em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0275d8;
+  }
+}
+
+.tag-default {
+  background-color: #818a91;
+}
+
+.tag-primary {
+  background-color: #0275d8;
+  cursor: default;
+}
+
+.company-list-container {
+  position: relative;
+
+  #company-list {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 5px);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    z-index: 999;
+    width: 100%;
+    max-height: 300px;
+    overflow: auto;
+    -webkit-box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, .15);
+    -moz-box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, .15);
+    box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, .15);
+
+    &::-webkit-scrollbar {
+      height: 11px;
+      width: 11px;
+      -webkit-appearance: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(47, 46, 46, 0.2);
+      border: 3px solid #fbf6f6;
+      border-radius: 8px;
+    }
+
+        li {
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px 10px;
+            box-sizing: border-box;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, .1);
+            }
+
+            &:not(:last-child):after {
+                border-bottom: 1px solid rgba(0, 0, 0, .45);
+                display: block;
+                content: "";
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+._navbar-search {
+    width: 317px;
+
+    @media screen and (max-width: 375px) {
+        width: 100%;
+    }
+
+    ._answers {
+        margin-top: 8px;
+        right: 0;
+        left: 0;
+        width: 100%;
+
+        ._answer-link {
+            width: 100%;
+            padding: 10px 12px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 18px;
+
+            ._hint {
+                background: #2088B3;
+                font-weight: 400;
+                text-decoration: white;
+            }
+        }
+    }
+
+    input {
+        @extend .form-control !optional;
+
+        border: 0;
+        border-radius: 6px;
+        z-index: -1;
+
+        @media screen and (max-width: 1140px) {
+            height: 29px;
+        }
+    }
+
+    img {
+        height: 65%;
+        top: 0;
+        right: 8px;
+        bottom: 0;
+    }
+}

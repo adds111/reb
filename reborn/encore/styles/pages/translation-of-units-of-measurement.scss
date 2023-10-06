@@ -1,0 +1,59 @@
+._calculation-container {
+    @extend ._chunks-container-grid;
+
+    h1 {
+        color: #000;
+        font-family: Inter;
+        font-size: 23px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 2em;
+    }
+
+    ._calc-card {
+        display: flex;
+        flex-direction: column;
+        border-radius: 17px;
+        border: 1px solid #E7E7E7;
+        padding: 40px 35px;
+        row-gap: 33px;
+
+        h5 {
+            color: #000;
+            font-family: Inter;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+        }
+
+        ._card-image {
+            width: 81px;
+            max-height: 90px;
+            margin: auto;
+        }
+
+        ._card-input-group {
+            display: grid;
+            grid-template-columns: 182px 1fr;
+            column-gap: 10px;
+            row-gap: 5px;
+
+            input {
+                border-radius: 7px;
+                border: 1px solid #D9D9D9;
+                background: #F3F3F3;
+                height: 24px;
+            }
+
+            label {
+                color: #333;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,163 @@
+._table-view-container {
+    ._table-title {
+        h2 {
+            color: #333;
+            font-family: Inter;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 33.6px;
+            margin-bottom: 1.25em;
+        }
+    }
+
+    ._container-table {
+        width: 100%;
+        border: 0;
+        border-spacing: 0;
+        padding: 0;
+        margin: 0;
+
+        @media screen and (max-width: 540px) {
+            ._model-column, ._warehouse-column, ._image-column {
+                display: none !important;
+            }
+
+            tr {
+                td {
+                    width: auto !important;
+                }
+            }
+        }
+
+        ._image-column {
+            position: relative;
+            width: 160px;
+            max-width: 160px;
+
+            img {
+                position: absolute;
+                top: 0;
+            }
+        }
+
+        thead {
+            background-color: #0876A6;
+
+            p {
+                padding: 10px 0;
+                color: #FFFFFD;
+                text-align: center;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                margin: 0;
+            }
+        }
+
+        tbody {
+            ._image-column {
+                background: white !important;
+            }
+
+            ._resource-row {
+                &._active {
+                    background-color: rgba(8, 118, 166, 0.15);
+
+                    ._resource-cart {
+                        a {
+                            background: #0876A6;
+
+                            img {
+                                filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(115deg) brightness(112%) contrast(110%) !important;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    background: #E8E8E8;
+                }
+            }
+
+            ._body-code {
+                width: 200px;
+                max-width: 200px;
+            }
+
+            ._resource-warehouse {
+                width: 75px;
+                max-width: 75px;
+
+                p {
+                    color: #25AD40 !important;
+                }
+            }
+
+            ._resource-model, ._resource-cart {
+                width: 50px;
+                max-width: 50px;
+                cursor: pointer !important;
+            }
+
+            ._resource-cart {
+                ._product-cart-open {
+                    width: 41px;
+                    margin: auto;
+                }
+
+                a {
+                    padding: 0;
+                    display: block;
+                    border-radius: 8px;
+
+                    img {
+                        padding: 5.5px 10px;
+                        filter: invert(66%) sepia(0%) saturate(0%) hue-rotate(148deg) brightness(91%) contrast(93%);
+                    }
+                }
+
+                &:hover {
+                    a {
+                        background: #0876A6;
+
+                        img {
+                            filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(115deg) brightness(112%) contrast(110%);
+                        }
+                    }
+                }
+            }
+
+            p, a {
+                padding: 10px 0;
+                color: #323232;
+                text-align: center;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                margin: 0;
+            }
+
+            a {
+                display: block;
+                color: #0096BB;
+                text-decoration: none;
+            }
+        }
+
+        thead, tbody, tr, th, td {
+            border: 0;
+            border-spacing: 0;
+            padding: 0;
+            margin: 0;
+        }
+
+        td {
+            cursor: default;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+._our-geography {
+    display: flex;
+    background-image: url("/assets/reborn/images/pixels/EAEAEA.png");
+
+    ._geography-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 47px;
+        padding: 47px 0;
+
+        @media screen and (max-width: 1330px) {
+            grid-template-columns: 1fr;
+        }
+
+        ._geo-map {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            img {
+                @media screen and (max-width: 540px) {
+                    width: 100%;
+                }
+            }
+
+            ._location {
+                margin-top: 66px;
+                background: #2088B3;
+                border-radius: 7px;
+                padding: 12px;
+
+                p {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 17px;
+                    line-height: 20px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    margin: 0;
+                }
+            }
+        }
+
+        ._description-holder {
+            @media screen and (max-width: 1330px) {
+                margin-top: 2em;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 50px;
+            }
+
+            @media screen and (max-width: 1052px) {
+                grid-template-columns: 1fr;
+                row-gap: 2em;
+            }
+
+            p {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 32px;
+                text-align: justify;
+                color: #000000;
+            }
+
+            ul {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 32px;
+                text-align: justify;
+                color: #000000;
+                padding: 0;
+                list-style: none;
+
+                @media screen and (max-width: 1052px) {
+                    column-gap: 2em;
+                    columns: 2;
+                }
+
+                @media screen and (max-width: 540px) {
+                    columns: 1;
+                }
+
+                ._title {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

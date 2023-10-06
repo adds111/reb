@@ -1,0 +1,180 @@
+._products-stuff-info {
+  display: flex;
+  flex-direction: column;
+}
+._products-stuff-info ._stuff-title {
+  color: #000;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+}
+._products-stuff-info ._stuff-switchers {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+._products-stuff-info ._stuff-switchers ._button-switcher {
+  width: 184px;
+  height: 55px;
+  border-radius: 0;
+  background: #FFF;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  transition: border-bottom-width 0.15s ease-out;
+}
+._products-stuff-info ._stuff-switchers ._button-switcher._active {
+  border: 0;
+  border-bottom: 8px solid #0876A6;
+}
+._products-stuff-info ._stuff-cards {
+  margin-top: 30px;
+  display: flex;
+}
+._products-stuff-info ._stuff-cards ._card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 47px;
+       column-gap: 47px;
+  width: 100%;
+}
+@media screen and (max-width: 1140px) {
+  ._products-stuff-info ._stuff-cards ._card {
+    -moz-column-gap: 27px;
+         column-gap: 27px;
+  }
+}
+@media screen and (max-width: 632px) {
+  ._products-stuff-info ._stuff-cards ._card {
+    grid-template-columns: 1fr;
+    row-gap: 2em;
+  }
+  ._products-stuff-info ._stuff-cards ._card ._stuff-image ._image-preview {
+    min-height: 275px;
+  }
+}
+._products-stuff-info ._stuff-cards ._card ._stuff-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+._products-stuff-info ._stuff-cards ._card ._stuff-image ._image-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 516px;
+  max-height: 490px;
+  margin-bottom: 1.5em;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #F8F8F8;
+}
+._products-stuff-info ._stuff-cards ._card ._stuff-image ._image-preview img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+._products-stuff-info ._stuff-cards ._card ._stuff-attachments {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+._products-stuff-info ._stuff-cards ._card ._stuff-attachments ._attach-title {
+  color: #000;
+  font-family: Inter;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0;
+}
+._products-stuff-info ._stuff-cards ._card ._stuff-attachments ._attach-cart {
+  display: flex;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+._products-stuff-info ._stuff-cards ._card ._stuff-attachments ._attach-cart ._cart-label {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  text-decoration: none;
+  border-radius: 6px;
+  background: #0876A6;
+  padding: 5px 63.5px;
+  cursor: pointer;
+}
+._products-stuff-info ._stuff-cards ._card ._stuff-attachments ._attach-cart ._cart-input {
+  border-radius: 8px;
+  border: 1px solid #CCC;
+  background: #FFF;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  width: 87px;
+  height: 40px;
+  text-align: right;
+}
+._products-stuff-info ._stuff-cards ._card ._stuff-attachments ._description-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+._products-stuff-info ._stuff-cards ._card ._stuff-attachments ._description-item p {
+  color: #777;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+._products-stuff-info ._stuff-cards ._card ._stuff-attachments ._description-item span {
+  border-bottom: 1px solid #DDD;
+}
+._products-stuff-info ._stuff-cards ._card ._stuff-attachments ._block-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+._products-stuff-info ._stuff-cards ._card ._stuff-attachments ._block-text ul, ._products-stuff-info ._stuff-cards ._card ._stuff-attachments ._block-text p {
+  margin: 0;
+}
+._products-stuff-info ._stuff-cards ._card ._stuff-attachments ._text-danger {
+  color: #D23434;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+._products-stuff-info ._stuff-cards ._card ._stuff-attachments h5 {
+  color: #000;
+  font-family: Inter;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 0.5em;
+}
+._products-stuff-info ._stuff-cards ._card ._stuff-attachments ._text, ._products-stuff-info ._stuff-cards ._card ._stuff-attachments a, ._products-stuff-info ._stuff-cards ._card ._stuff-attachments p, ._products-stuff-info ._stuff-cards ._card ._stuff-attachments td {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+._products-stuff-info ._stuff-cards ._card ._stuff-attachments p, ._products-stuff-info ._stuff-cards ._card ._stuff-attachments td {
+  color: #777;
+}/*# sourceMappingURL=stuff.css.map */

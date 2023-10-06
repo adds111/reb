@@ -1,0 +1,28 @@
+._site-talk-me {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  -moz-column-gap: 31px;
+       column-gap: 31px;
+  right: 72px;
+  bottom: 0;
+  width: 230px;
+  height: 51px;
+  background: rgba(29, 29, 29, 0.54);
+  border-radius: 9px 9px 0 0;
+  padding: 9px 29px;
+  cursor: pointer;
+}
+._site-talk-me img {
+  width: 32px;
+  height: 32px;
+}
+._site-talk-me p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  margin: 0;
+}/*# sourceMappingURL=talkMe.css.map */

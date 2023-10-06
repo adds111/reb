@@ -1,0 +1,56 @@
+._products-attachments ._attachments {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 47px;
+       column-gap: 47px;
+  background: #EAEAEA;
+  padding: 26px 24px;
+}
+@media screen and (max-width: 632px) {
+  ._products-attachments ._attachments {
+    grid-template-columns: 1fr;
+    row-gap: 2em;
+  }
+}
+._products-attachments ._attachments h5 {
+  color: #000;
+  font-family: Inter;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 1em;
+}
+._products-attachments ._attachments ._catalogs, ._products-attachments ._attachments ._certificates {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+._products-attachments ._attachments ._catalogs a, ._products-attachments ._attachments ._certificates a {
+  display: flex;
+  flex-wrap: nowrap;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+  align-items: center;
+  justify-content: start;
+  color: #4B4B4B;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration-line: underline;
+}
+._products-attachments ._attachments ._catalogs a p, ._products-attachments ._attachments ._certificates a p {
+  margin: 0;
+}
+._products-attachments ._attachments ._certificates ._show-all {
+  margin-top: 1.5em;
+  color: #898989;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+}/*# sourceMappingURL=attachments.css.map */

@@ -1,0 +1,71 @@
+._open-document {
+    display: grid;
+    align-items: center;
+    row-gap: 26px;
+    margin-top: 80px;
+    overflow: auto;
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar {
+        width: 12px !important;
+        height: 12px !important;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: rgba(69, 69, 69, 0.65) !important;
+        border-radius: 12px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(8, 118, 166, 0.65) !important;
+        border-radius: 12px;
+    }
+
+    @media screen and (max-width: 1330px) {
+        column-gap: 50px;
+    }
+
+    ._document-title {
+        padding-bottom: 26px;
+    }
+
+    ._document-preview {
+        margin: auto;
+        height: 200px;
+
+        canvas {
+            width: inherit !important;
+            height: inherit !important;
+        }
+    }
+
+    ._modal-canvas {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 15px;
+        column-gap: 15px;
+
+        canvas {
+            width: 250px;
+            height: 178px;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+._open-document-fullview {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .25);
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1056;
+
+    canvas {
+        margin: 0 auto;
+    }
+}

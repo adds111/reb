@@ -1,0 +1,62 @@
+._products-attachments {
+    ._attachments {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 47px;
+        background: #EAEAEA;
+        padding: 26px 24px;
+
+        @media screen and (max-width: 632px) {
+            grid-template-columns: 1fr;
+            row-gap: 2em;
+        }
+
+        h5 {
+            color: #000;
+            font-family: Inter;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 20px;
+            margin-bottom: 1em;
+        }
+
+        ._catalogs, ._certificates {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1em;
+
+            a {
+                display: flex;
+                flex-wrap: nowrap;
+                column-gap: 18px;
+                align-items: center;
+                justify-content: start;
+                color: #4B4B4B;
+                font-family: Inter;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                text-decoration-line: underline;
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+
+        ._certificates {
+            ._show-all {
+                margin-top: 1.5em;
+                color: #898989;
+                font-family: Inter;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-decoration-line: underline;
+            }
+        }
+    }
+}

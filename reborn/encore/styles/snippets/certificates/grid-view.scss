@@ -1,0 +1,96 @@
+._certificates-grid {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+
+    ._grid-title {
+        margin-bottom: 35px;
+
+        h1 {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            text-transform: uppercase;
+            color: #000000;
+        }
+    }
+
+    ._certificates {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(5, 140px);
+        max-height: 200px;
+        overflow: hidden;
+
+        @media screen and (max-width: 1330px) {
+            grid-template-columns: repeat(4, 140px);
+        }
+
+        @media screen and (max-width: 870px) {
+            grid-template-columns: repeat(3, 140px);
+        }
+
+        @media screen and (max-width: 490px) {
+            grid-template-columns: repeat(2, 140px);
+        }
+
+        ._certificates-item {
+            width: 140px;
+            height: 200px;
+
+            canvas {
+                width: inherit !important;
+                height: inherit !important;
+            }
+        }
+
+        ._modal-canvas {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 15px;
+            column-gap: 15px;
+
+            canvas {
+                width: 140px;
+                height: 200px;
+                box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+
+    ._certificates-show {
+        display: flex;
+        justify-content: end;
+        margin-top: 25px;
+
+        a {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: right;
+            text-decoration-line: underline;
+            color: #898989;
+        }
+    }
+}
+
+._certificates-item-fullview {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .25);
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1056;
+
+    canvas {
+        margin: 0 auto;
+    }
+}

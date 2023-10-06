@@ -1,0 +1,117 @@
+._products-list {
+
+    ._list-title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 46px;
+    }
+
+    ._list-view {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,  324px);
+        justify-content: space-between;
+        row-gap: 30px;
+
+        @media screen and (max-width: 1330px) {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 52px;
+        }
+
+        @media screen and (max-width: 1052px) {
+            column-gap: 36px;
+        }
+
+        @media screen and (max-width: 540px) {
+            column-gap: 24px;
+        }
+
+        @media screen and (max-width: 490px) {
+            grid-template-columns: 1fr;
+        }
+
+        ._list-card {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+
+            ._card-image-block {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                height: 124px;
+                border-radius: 7px 7px 0 0;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: auto;
+
+                    @media screen and (max-width: 960px) {
+                        width: unquote("calc(100% + 50vw)");
+                    }
+                }
+
+                ._block-tinting {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    opacity: 0;
+                    transition: .5s;
+                    background: rgba(255, 255, 255, 0.82);
+                    border-radius: 6px;
+
+                    p {
+                        margin: 7px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 15px;
+                        line-height: 18px;
+                        color: #000000;
+                    }
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            ._card-title-block {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                height: 60px;
+                margin: auto;
+                padding: 0 20px;
+                background: url("/assets/reborn/images/pixels/454545.png");
+                border-radius: 0 0 7px 7px;
+
+                p {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 17px;
+                    line-height: 20px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    color: #FFFFFF;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

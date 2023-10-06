@@ -1,0 +1,95 @@
+._chunks-container-grid {
+    ._stuff-model {
+        @media screen and (max-width: 1052px) {
+            order: -1;
+        }
+    }
+}
+._stuff-model {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 43px;
+    align-items: center;
+    background: #EAEAEA;
+    padding: 8px 29px;
+
+    @media screen and (max-width: 1440px) {
+        column-gap: 23px;
+    }
+
+    @media screen and (max-width: 560px) {
+        grid-template-columns: 1fr;
+        row-gap: 2em;
+        align-items: center;
+        justify-content: center;
+
+        ._model-image {
+            order: -1;
+            margin: auto;
+        }
+    }
+
+    ._model-download {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 8px;
+        row-gap: 8px;
+
+        ._model-label {
+            color: #333;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            margin: 0;
+        }
+
+        ._model-select {
+            border-radius: 8px;
+            border: 1px solid #CCC;
+            background: #FFF;
+            width: 150px;
+            height: 36px;
+            color: #A6A6A6;
+            font-family: Inter;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+        }
+
+        ._model-select-download {
+            color: #FFF;
+            text-align: center;
+            font-family: Inter;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px;
+
+            border-radius: 6px;
+            background: #0876A6;
+            width: 150px;
+            height: 36px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+
+    ._model-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        width: 90px;
+        height: 80px;
+
+        img {
+            width: 100%;
+            position: absolute;
+        }
+    }
+}

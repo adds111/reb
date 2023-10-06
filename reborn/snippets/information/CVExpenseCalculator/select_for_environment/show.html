@@ -1,0 +1,63 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	
+
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="/assets/snippets/product/calcflow3/select_for_environment/select3.js"></script>
+	<link rel="stylesheet" href="/assets/snippets/product/calcflow3/select_for_environment/select3.css">
+</head>
+<body>
+
+	//<br>
+	// show here <br>
+	//<br>
+	// http://fluid-line.ru/assets/snippets/product/calcflow3/select_for_environment/show.html
+	<br>
+
+
+	<select statenotnull="1" id="sreda" select="12"></select>
+	<script>
+		new fluid_select('sreda', 
+			{styles: 'width: 200px', notRefreshOnStart: true},
+			function (data){
+				console.log(data);
+				alert(1);
+			}
+		);
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><hr><textarea style="width: 1000px; height: 300px;">
+<script src="http://fluid-line.ru/assets/snippets/product/calcflow3/select_for_environment/select3.js"></script>
+<link rel="stylesheet" href="http://fluid-line.ru/assets/snippets/product/calcflow3/select_for_environment/select3.css">
+
+<select statenotnull="1" id="sreda"></select>
+<script>
+	new fluid_select('sreda', 
+		{styles: 'width: 200px'},
+		function (data){
+			console.log(data);
+		}
+	);
+</script>
+</textarea>
+
+</body>
+</html>

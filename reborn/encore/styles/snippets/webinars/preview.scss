@@ -1,0 +1,98 @@
+._webinar-preview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    ._webinar-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10%;
+        width: 100%;
+        
+        @media screen and (max-width: 1140px) {
+            grid-template-columns: 1fr !important;
+        }
+
+        ._preview-planned, ._preview-completed {
+            display: flex;
+            flex-direction: column;
+
+            ._planned-title {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                column-gap: 28px;
+                margin-bottom: 42px;
+
+                h1 {
+                    margin-bottom: 0;
+                }
+            }
+
+            ._webinar-item {
+                display: grid;
+                grid-template-columns: 25% 70%;
+                column-gap: 5%;
+                align-items: center;
+                margin-bottom: 32px;
+
+                @media screen and (max-width: 1140px) {
+                    display: flex;
+                }
+
+                ._webinar-date {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #454545;
+                    margin: 0;
+
+                    @media screen and (max-width: 1140px) {
+                        min-width: 125px;
+                    }
+                }
+
+                ._webinar-description {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 22px;
+                    color: #0876A6;
+                    text-decoration: none;
+                }
+            }
+
+            ._only-title {
+                @extend ._webinar-item;
+
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    ._all-webinars {
+        display: flex;
+        width: 100%;
+        margin-top: 37px;
+        margin-bottom: 69px;
+
+        ._webinars {
+            @extend .btn;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 20px;
+            text-align: center;
+            color: #FFFFFF;
+            background: #2088B3;
+            border-radius: 7px;
+            margin: auto;
+            padding: 12px 73px;
+        }
+    }
+}

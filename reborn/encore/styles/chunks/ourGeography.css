@@ -1,0 +1,94 @@
+._our-geography {
+  display: flex;
+  background-image: url("/assets/reborn/images/pixels/EAEAEA.png");
+}
+._our-geography ._geography-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 47px;
+       column-gap: 47px;
+  padding: 47px 0;
+}
+@media screen and (max-width: 1330px) {
+  ._our-geography ._geography-container {
+    grid-template-columns: 1fr;
+  }
+}
+._our-geography ._geography-container ._geo-map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 540px) {
+  ._our-geography ._geography-container ._geo-map img {
+    width: 100%;
+  }
+}
+._our-geography ._geography-container ._geo-map ._location {
+  margin-top: 66px;
+  background: #2088B3;
+  border-radius: 7px;
+  padding: 12px;
+}
+._our-geography ._geography-container ._geo-map ._location p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+@media screen and (max-width: 1330px) {
+  ._our-geography ._geography-container ._description-holder {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+}
+@media screen and (max-width: 1052px) {
+  ._our-geography ._geography-container ._description-holder {
+    grid-template-columns: 1fr;
+    row-gap: 2em;
+  }
+}
+._our-geography ._geography-container ._description-holder p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 32px;
+  text-align: justify;
+  color: #000000;
+}
+._our-geography ._geography-container ._description-holder ul {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 32px;
+  text-align: justify;
+  color: #000000;
+  padding: 0;
+  list-style: none;
+}
+@media screen and (max-width: 1052px) {
+  ._our-geography ._geography-container ._description-holder ul {
+    -moz-column-gap: 2em;
+         column-gap: 2em;
+    -moz-columns: 2;
+         columns: 2;
+  }
+}
+@media screen and (max-width: 540px) {
+  ._our-geography ._geography-container ._description-holder ul {
+    -moz-columns: 1;
+         columns: 1;
+  }
+}
+._our-geography ._geography-container ._description-holder ul ._title {
+  font-weight: 500;
+}/*# sourceMappingURL=ourGeography.css.map */

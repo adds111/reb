@@ -1,0 +1,29 @@
+#siteSlider {
+    .carousel-inner {
+        height: inherit;
+
+        .carousel-item {
+            height: inherit;
+
+            ._item-absolute {
+                display: flex;
+                justify-content: center;
+                height: auto;
+                overflow: hidden;
+
+                img {
+                    @media screen and (max-width: 960px) {
+                        max-width: unquote("calc(1520px + (100vw - 375px) * (400 / 585))");;
+                    }
+
+                    width: fit-content !important;
+                    height: fit-content !important;
+                }
+            }
+
+            ._item-empty {
+                height: 50px;
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+._site-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+._site-banner img {
+  position: absolute;
+  height: 100%;
+}
+._site-banner ._block-tinting {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+._site-banner ._banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 35px;
+  width: 100%;
+  position: relative;
+  padding-top: 47px;
+  padding-bottom: 67px;
+}
+._site-banner ._banner-container ._banner-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 100%;
+}
+._site-banner ._banner-container ._banner-description {
+  display: flex;
+  width: 100%;
+}
+._site-banner ._banner-container ._banner-description ._content {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+._site-banner ._banner-container ._banner-description ._content ul {
+  padding: 0;
+  list-style: none;
+}
+._site-banner ._banner-container ._banner-description ._content ul li {
+  padding: 8px 0;
+}
+._site-banner ._banner-container ._banner-description ._content p {
+  padding-top: 16px;
+}/*# sourceMappingURL=view.css.map */

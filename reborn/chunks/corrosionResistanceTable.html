@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="[(site_url)]">
+  <meta name="robots" content="index,follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[!korro_description? &title=`1`!]</title>
+  <meta name="yandex-verification" content="6bdbf00a41da4417">
+  <meta http-equiv="Content-Type" content="text/html; charset=[(modx_charset)]">
+  <meta name="keywords" content="[*seo-key*]">
+  <meta name="description" content="[!korro_description!]">
+
+  <!--Open Graph разметка-->
+  <meta property="og:title" content="[!korro_description? &title=`1`!]">
+  <meta property="og:description" content="[!korro_description!]">
+  <meta property="og:image" content="[(site_url)][+phx:if=`[*image_item_2*]`:isnot=``:then=`[*image_item_2*]`:else=`[*image_item*]`+]">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content= "[!current_url!]">
+  <!--Open Graph разметка-->
+
+  <!--Cannonical-->
+  <link rel="canonical" href="[!current_url!]">
+  <!--Cannonical-->
+
+
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WBF9SK6');</script>
+  <!-- End Google Tag Manager -->
+  <!--<link href="assets/templates/2014/css/main.css?v=[[version? &file=`assets/templates/2014/css/main.css`]]" rel="stylesheet">-->
+  <!--Подключаемые файлы css-->
+  <link href="assets/templates/2014/css/main.css?v=[[version? &file=`assets/templates/2014/css/main.css`]]" rel="stylesheet">
+  <link href="assets/templates/2014/css/new.css?v=[[version? &file=`assets/templates/2014/css/new.css`]]" rel="stylesheet">
+  <link href="assets/templates/2014/css/mobile.css?v=[[version? &file=`assets/templates/2014/css/mobile.css`]]" rel="stylesheet">
+
+
+  <link href="/assets/templates/2014/js/select2/css/select2.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/logo.svg" type="image/svg">
+
+
+  <!--<link type="text/css" rel="stylesheet" href="/assets/templates/fluid/css/Main.css">-->
+  <link type="text/css" rel="stylesheet" href="/assets/css/ui/ui.css">
+  <link rel="stylesheet" href="/assets/templates/2014/banner/css/nivo-slider.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="/assets/templates/2014/banner/css/style.css?v=[[version? &file=`/assets/templates/2014/banner/css/style.css`]]" type="text/css" media="screen">
+  <link type="text/css" rel="stylesheet" href="/assets/js/jquery.fancybox-1.3.1.css">
+  <link type="text/css" rel="stylesheet" media="screen" href="/assets/templates/fluid/css/main_menu.css">
+  <!--<script src="assets/js/jquery-3.2.1.min.js"></script>-->
+  <script src="/assets/vendor/jquery/jquery-1.7.2.min.js"></script>
+  <script src="/assets/js/jquery.cookie.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>-->
+  <script src="/assets/templates/2014/js/main.js?v=[[version? &file=`/assets/templates/2014/js/main.js`]]"></script>
+  <script src="/assets/templates/2014/js/basket-button.js?v=[[version? &file=`/assets/templates/2014/js/basket-button.js`]]"></script>
+
+  <script src="/assets/templates/2014/plugins/lightbox/jquery.lightbox-0.5.pack.js"></script>
+  <link rel="stylesheet" href="/assets/templates/2014/plugins/lightbox/jquery.lightbox-0.5.css" type="text/css" media="screen">
+  <script src="/files/js/jquery707.highlight.js"></script>
+  <script src="/files/js/jquery707.scrollTo-min.js"></script>
+  <script src="/assets/templates/2014/js/select2/js/select2.full.js"></script>
+
+  <!--
+  <script src="assets/templates/2014/js/jquery.localscroll-1.2.7-min.js"></script>
+  <script src="assets/templates/2014/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+  <script>
+      $(function($) {
+          $.localScroll({
+              duration: 1000,
+              hash: false });
+      });
+  </script>
+  -->
+
+
+
+
+  <link type="text/css" rel="stylesheet" href="/assets/templates/2014/js/qtip/jquery.qtip.min.css">
+  <script src="/assets/templates/fluid/js/form_jq.js"></script>
+  <script src="/assets/js/ui.js"></script>
+  <style>
+    .menu ul li .menu_arrow {display: none;}
+    .menu ul li li .menu_arrow {display: block;}
+    .menu li.active { color: #0096BB; background-color: white; }
+    .menu li.active a { color: #0096BB; }
+
+    .container-outer {margin-bottom: 15px;}
+
+    .bordersGray {border-collapse: collapse; color: #333; text-align: center;}
+    .bordersGray td {border: 1px solid #D5D5D5; padding: 2px;}
+
+    /* 4й */
+    div.menu ul li ul li:hover ul ul {visibility: hidden; transition: visibility 0.2s ease-out 0.2s; }
+    div.menu ul li ul ul li:hover ul {visibility: visible; transition: visibility 0.5s ease-out 0.5s; }
+    div.menu ul ul ul ul { margin-left: 320px !important; margin-top: -47px !important; width: 270px; border-left: 1px solid gray;}
+    div.menu ul ul ul { margin-left: 357px; margin-top: -50px !important; width: 320px; border: 1px solid #0096BB;}
+
+    .st2 {width:500px;height:293px;}
+    .st2  img{width:500px;height:293px;position:absolute;z-index:150;}
+    .st2:hover {width:500px;height:293px;overflow:visible;}
+    .st2:hover img{visibility:visible;position:absolute;z-index:150;}
+
+    .imagesInColumn { width: 100%; margin-top: 20px; margin-bottom: 20px; }
+    .imagesInColumn td { text-align: center; padding: 10px; vertical-align: middle; }
+    .imagesInColumn i { font-size: 15px; display: block; margin-top:5px; color: #525252; font-family: "PT Sans Narrow","sans-serif"; font-size:18px; }
+    .imagesInColumn.border  img { border: 1px solid #D9D9D9 }
+
+    td.basket { width: 27px; }
+
+    div.more-info-headers a { text-decoration: none; margin-left: 20px; color: #0096BB; border-bottom: 1px dashed #0096BB; width: 330px; cursor: pointer; 	display: inline-block; margin-bottom: 5px; font-weight: bold; }
+    table.center td, table.center th { text-align: center; }
+
+    a.product-box-main-simple div.image img {
+      display: inline-block;
+      max-width: 215px;
+      max-height: 145px;
+    }
+    #visiterEmail{
+      position: absolute;
+      background-color: #F2F2F2;
+      color: #0196BE;
+      font-weight: normal;
+      font-size: 20px;
+      top: 10px;
+      right: 19px;
+      font-family: tahoma;
+      letter-spacing: 1px;
+      display: block;
+      text-decoration: none;
+    }
+
+    /* garbage */
+    .lines-title_tr { background:#00ADEF;line-height:14px; }
+    .lines-title { padding-left:10px;font-size:8pt;color:#000;background:#dceff3; }
+    .lines-title a { color:#000;font-weight:bolder;text-decoration:none; }
+    .lines-content { padding:5px;font-size:7pt;line-height:12px;background:#eee;text-decoration:none;text-align:left; }
+    .lines-content_title { font-weight:bold;font-size:8pt;color:#000;text-decoration:none;text-align:left; }
+    .lines-table_space { margin-top:10px;margin-left:20px }
+    .lines-content2 { font-size:9pt;padding-bottom:10px;line-height:14px }
+    .lines-content_title:hover { color:#666 }
+
+    .clear {clear: both;}
+    h1 { font-size: 16px;margin:0px;padding:0px; }
+    #content h1 { font-size: 16px;margin:0px;padding:10px 0px; }
+    h2 { font-size: 14px; }
+    h3 { font-size: 12px; }
+    .OrderpageItemComment { border: 1px solid rgb(195, 195, 195); padding: 5px; width: 798px; height: 22px; margin-left: 2px; }
+    a:hover { color:#000;text-decoration:none; }
+    /* /garbage */
+
+    .descProp { display: block; font-size:13px; line-height: 13px; font-style: normal; }
+
+    .basket-button { display: block; }
+    .basket-button-menu { z-index: 3; display: none; }
+    #selectedProduct .basket-button-menu { display: block; }
+
+    .products tr:hover, .products tr.even:hover, .products tr.odd:hover { background-color: #E5E5E5; }
+    .products tr:hover .image { background-color: white !important; }
+    .products .image { background-color: white; }
+
+    tr#selectedProduct{
+      background-color: #769AA2;
+      color: white;
+    }
+
+    a.product-box-detailed div.info span.textov {font-size:14px !important;color:#000000;display:inline;}
+
+    .indexOfTables { display: block; color: #4B4B4B; border-bottom: 1px dashed #A4A4A4; padding: 5px 0 0 5px; text-decoration: none; }
+    .indexOfTables:hover {color: black; background-color: #ECECEC;}
+
+    #filterLoading {
+      padding: 10px;
+      background-color: white;
+      opacity: 0.8;
+      position: fixed;
+      display: none;
+      border: 1px solid black;
+      font-weight: bold;
+      font-size: 14px;
+      width: 150px;
+      height: 110px;
+      top:45%; left: 45%;
+      text-align: center;
+      z-index: 101;
+    }
+
+    .indexOfTablesBlock { margin-bottom: 30px; }
+
+    ul.multilinks li{
+      margin-top: 10px;
+      color: #0096BB;
+      background: url('/assets/templates/2014/images/pdf.png') no-repeat;
+      padding-left: 22px;
+    }
+    ul.multilinks li:hover{
+      color: #DE2222;
+    }
+
+    /* htc */
+    #product_div td {padding: 5px; border: 1px solid gray;}
+    #product_div table { border: none; border-collapse: collapse; }
+    ol {margin-left: 20px;}
+    /* /htc */
+
+    .MaterialTable td { border: 1px solid gray; padding: 3px; }
+    .MaterialTable {border-collapse: collapse;}
+
+    div.message {
+      font-size: 14px;
+      font-weight: bold;
+      color: red;
+      border: 1px solid red;
+      padding: 7px;
+    }
+    ul.pdf a.fileLink {background-image: none; padding-left:0px; }
+
+    div.attention{border: 1px solid red; padding:10px;}
+    .stockStatus { color:#25AD40; }
+
+    .scheme-2d, #scheme { display: table-cell; background-image: url(/assets/images/CMCDrawingSales.jpg); background-position: top center; background-repeat: no-repeat; height: 60px; border: none; width: 65px; text-align: center; vertical-align: bottom; }
+    .scheme-3d { display: table-cell; background-image: url(/assets/images/CMCDrawing3D.jpg); background-position: top center; background-repeat: no-repeat; height: 60px; border: none; width: 65px; text-align: center; vertical-align: bottom; }
+    .shortCell { position: relative; width: 85px; background-color: inherit; color: black; padding: 0px; margin-top: inherit; line-height: 16px; }
+    .shortCell div { position: absolute; right: 0px; top: 0px; background: rgb(247, 243, 194) none repeat scroll 0% 0%; display: block; }
+
+    .catalogsInBlock a {color: white; text-decoration: none; border-bottom: 1px dashed white; background-position: 4px; font-size: 12px; background: none !important; padding-left: 0px !important; }
+    .catalogsInBlock td {padding-left: 18px; background: url('/assets/templates/2014/images/pdf.png') no-repeat left center;}
+    .catalogsInBlock td:first-child {padding-right: 10px;}
+
+    .product-box-detailed img {max-width: 160px;}
+
+    [!newyearbg!]
+
+    .menu ul li:nth-child(2) ul { margin-left: 50px; }
+    .menu ul li:nth-child(2) ul ul {margin-left: 357px;}
+    #lightbox-container-image-data { display:none; }
+
+    table.productInfo { border-collapse: collapse; }
+    table.productInfo td { padding: 3px 5px; }
+    table.productInfo tr:hover td {background-color: inherit;}
+
+    .products .orderCode { white-space: nowrap; }
+
+    table.descProps { margin-top: 5px; }
+    table.descProps tr td:first-child { font-style: normal !important; }
+    table.descProps td {padding-bottom:7px !important;}
+    table.descProps tr td:last-child { color: #414141; }
+
+    .more-info-content h2 { margin-bottom: 0px; margin-top: 10px; }
+
+    /*анимация загрузки*/
+    #fountainG{
+      position:relative;
+      width:120px;
+      height:14px;
+      margin:auto;
+      margin-top: 20px;
+    }
+
+    .fountainG{
+      position:absolute;
+      top:0;
+      background-color:rgb(0,0,0);
+      width:14px;
+      height:14px;
+      animation-name:bounce_fountainG;
+      animation-duration:1.5s;
+      animation-iteration-count:infinite;
+      animation-direction:normal;
+      transform:scale(.3);
+      border-radius:9px;
+    }
+
+    #fountainG_1{
+      left:0;
+      animation-delay:0.6s;
+    }
+
+    #fountainG_2{
+      left:15px;
+      animation-delay:0.75s;
+    }
+
+    #fountainG_3{
+      left:30px;
+      animation-delay:0.9s;
+    }
+
+    #fountainG_4{
+      left:45px;
+      animation-delay:1.05s;
+    }
+
+    #fountainG_5{
+      left:60px;
+      animation-delay:1.2s;
+    }
+
+    #fountainG_6{
+      left:75px;
+      animation-delay:1.35s;
+    }
+
+    #fountainG_7{
+      left:90px;
+      animation-delay:1.5s;
+    }
+
+    #fountainG_8{
+      left:105px;
+      animation-delay:1.64s;
+    }
+
+
+
+    @keyframes bounce_fountainG{
+      0%{
+        transform:scale(1);
+        background-color:rgb(0,0,0);
+      }
+
+      100%{
+        transform:scale(.3);
+        background-color:rgb(255,255,255);
+      }
+    }
+    /*/анимация загрузки*/
+
+    .shortCell {overflow: hidden; width: 200px; height: 32px; font-size: 12px; text-align: justify; overflow-y: scroll; } /*ограничивает размер ячейки в таблице продукции*/
+
+    .product-box_pdf-download {
+      width: 50px;
+      position: absolute;
+      bottom: 7px;
+      right: 30px;
+      border-bottom: 1px dashed #FB7474;
+      color: #FB7474;
+      background-color: white;
+      padding-top: 3px;
+    }
+    .product-box_pdf-ico {
+      width: 22px;
+      height: 22px;
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+    }
+    /*скрываем кнопки навигации у картинок*/
+    #lightbox-nav-btnNext,#lightbox-nav-btnPrev {display: none !important; }
+
+    #main_phone {
+      position: absolute;
+      right:5px;
+      color: black;
+      font-size: 22px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      text-decoration: none;
+      display: block;
+      margin-top: 12px;
+      font-family: calibri;
+    }
+    #main_phone_info {
+      position: absolute;
+      right: 5px;
+      font-size: 14px;
+      font-family: arial;
+    }
+
+
+
+
+    @media (max-width: 767px){
+      .head-wapka{
+        display: none;
+      }
+      .c{
+        display: none;
+      }
+  </style>
+
+
+
+
+  <script>
+    $(function(){
+      $('.img2').hover(function(){
+        $(this).children('img').stop().animate({width:"1024px",height:"621px"}, 400);
+      }, function(){ $(this).children('img').stop().animate({width:"500px",height:"293px"}, 400); });
+    });
+
+  </script>
+  <script>
+    if(/loged/.test(window.location.href)){
+      alert('Вы успешно вошли');
+    }
+  </script>
+
+  <script src="/assets/templates/2014/banner/scripts/jquery.nivo.slider.pack.js"></script>
+
+  <!-- Перемещение элементов списка заказа -->
+  <script src="assets/js/jquery-ui.js"></script>
+  <style>
+    .itemPlaceHolder { display: block; height: 100px; width: 100$; }
+    .productCodeCell {width: 85px; overflow: hidden; }
+  </style>
+  <script>
+    $(function() {
+      $("#sortable").sortable({
+        opacity: 0.6,
+        placeholder: "itemPlaceHolder",
+        handle: ".handle",
+        axis: "y",
+        stop: function() {
+          var listData = '';
+          $('div#sortable table').each(function(){
+            listData = listData + $(this).attr('itemId3') + '||';
+          });
+          $.post( "https://fluid-line.ru/assets/snippets/shopkeeper/myfuncs/savePositions.php", { data: listData });
+        }
+      });
+    });
+  </script>
+  <!--/перемещение -->
+  <script>
+    $(document).ready(function () {
+      productsLi = $('div.menu ul > li:nth-child(2):first');
+
+      //<li><a href='/vacuum-equipment'>Вакуумное оборудование</a></li>
+
+      productsLi.prepend("<ul class='productGroups' style='position: absolute; margin-left: -260px; margin-top: 30px;'><li style='margin-left:12px; margin-top:10px; cursor: auto; height: 33px; font-weight: bold;'>По назначению:</li><li><a  href='/instrumentalnoe-oborudovanie'>Инструментальное оборудование</a></li><li><a href='/metering-equipment'>Измерительное оборудование</a></li><li><a href='/high-dy'>Оборудование на большое ДУ</a></li><li><a href='/high-pressure'>Оборудование на высокое давление</a></li><li><a href='/cryogenics'>Криогенное оборудование</a></li><li style='z-index:101; border-top: 1px solid #0096BB;'><a href='#' onclick=\"$('#zakazat_katalog').css('display','block'); return false;\" style='background-image: url(assets/templates/2014/images/menu/book-4.png); background-repeat:no-repeat; background-position: 10px center; padding-left:50px;'>Заказать доставку каталогов</a></li><li style='z-index:101;'><a href='#' onclick=\"$('#zakazat_prezentatciiu').css('display','block'); return false;\" style='background-image: url(assets/templates/2014/images/camera.png); background-repeat:no-repeat; background-position: 10px center; padding-left:50px;'>Заказать презентацию</a></li></ul>");
+      $('div.menu ul > li:nth-child(2) ul ul.productGroups').css('display','none');
+    });
+  </script>
+<!--  [styleForAuthorized]-->
+  <!-- GetIntent -->
+<!--  [showForSection? &pages=`[[sectionPages? &id=`66741`]]` &chunk=`getintent_rashod`]-->
+<!--  [showForSection? &pages=`[[sectionPages? &id=`66520`]]` &chunk=`getintent_uroven`]-->
+
+
+
+  <!--script>
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "7dbzrfruf6");
+  </script-->
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46330264-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-46330264-1');
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    [!connectEncore!]
+    <script src="/assets/snippets/product/js/ln.js"></script>
+    <script src="/assets/snippets/product/js/xselect.js"></script>
+
+    <style>
+    .form tr {
+      vertical-align: top;
+    }
+    .form th, .form td {
+      width: 20%;
+      text-align: left;
+    }
+    .form td p {
+      padding: 2px 0;
+    }
+
+    .form1 tr {
+      vertical-align: top;
+    }
+    .form1 th, .form td {
+      width: 20%;
+      text-align: left;
+    }
+    .form1 td p {
+      padding: 2px 0;
+    }
+    .bold {
+      font-weight: bold;
+      color: red;
+    }
+    .highlight {
+      background-color: rgb(255,255,153);
+    }
+    .selectHighlight {
+      background-color: yellow;
+      -moz-border-radius: 5px; /* FF1+ */
+      -webkit-border-radius: 5px; /* Saf3-4 */
+      border-radius: 5px; /* Opera 10.5, IE 9, Saf5, Chrome */
+      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); /* FF3.5+ */
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); /* Saf3.0+, Chrome */
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); /* Opera 10.5+, IE 9.0 */
+      padding:1px 4px;
+      margin:0 -4px;
+      color:#ff0000;
+    }
+    .finded{
+      color:white;background: #8A8A7B;
+    }
+    .select2-search__field {
+      padding: 0;
+
+    }
+
+    .select2-rendered__match {
+      text-decoration: underline;
+      color: black;
+      background-color: yellow;
+    }
+    .cutA{
+      white-space:initial !important;
+    }
+  </style>
+</head>
+<body>
+    {{nd_header}}
+    <div>
+        [[slider]]
+        {{nd_productionDirection}}
+        [[breadcrumbsView]]
+        [!corrosionResistanceTable_data!]
+
+        <div class="_chunks-container">
+            [!productsVideo!]
+        </div>
+
+        <div class="_chunks-container">
+            [!corrosionResistanceTable_html!]
+        </div>
+
+        <div class="_text-container tags">
+            <h2>Теги</h2>
+            [!corrosionResistanceTable_tags!]
+        </div>
+        </div>
+        {{nd_footer}}
+        {{nd_talkMe}}
+        {{nd_climb}}
+
+        <script>
+            var isManager =  [!manager!];
+        </script>
+    </body>
+</html>

@@ -1,0 +1,171 @@
+._news-grid {
+    position: relative;
+
+    @media screen and (max-width: 540px) {
+        max-height: 544px;
+        margin-bottom: 0;
+        overflow: hidden;
+    }
+
+    &._show {
+        overflow: unset !important;
+        max-height: unset !important;
+
+        :first-child {
+            top: unset !important;
+        }
+    }
+
+    ._block-tinting {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(0deg, #FFFFFF 10%, rgba(234, 234, 234, 0.00) 100%);
+
+        @media screen and (min-width: 541px) {
+            display: none;
+        }
+    }
+    ._grid-title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 46px;
+    }
+
+    ._grid-view {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 324px);
+        justify-content: space-between;
+        row-gap: 30px;
+
+        @media screen and (max-width: 1440px) {
+            grid-template-columns: repeat(auto-fit, 394px);
+        }
+        
+        @media screen and (max-width: 1140px) {
+            grid-template-columns: repeat(auto-fit, 329px);
+        }
+
+        @media screen and (max-width: 960px) {
+            grid-template-columns: repeat(auto-fit, 296px);
+        }
+
+        @media screen and (max-width: 870px) {
+            grid-template-columns: repeat(auto-fit, 234px);
+        }
+
+        @media screen and (max-width: 540px) {
+            grid-template-columns: 333px;
+            justify-content: center;
+        }
+
+        ._grid-item {
+            display: flex;
+            flex-direction: column;
+
+            ._item-time {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                color: #999999;
+                margin-bottom: 23px;
+            }
+
+            ._item-card {
+                display: flex;
+                flex-direction: column;
+                border-radius: 7px;
+                height: 100%;
+                background: url("/assets/reborn/images/pixels/454545.png");
+
+                ._item-image {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 7px;
+                    overflow: hidden;
+
+                    img {
+                        max-height: 137px;
+                    }
+                }
+
+                ._item-description {
+                    display: flex;
+                    align-items: center;
+                    padding: 20px 25px;
+
+                    p {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 19px;
+                        align-items: center;
+                        color: #FFFFFF;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    ._news-show {
+        display: flex;
+        justify-content: end;
+        margin-top: 25px;
+
+        @media screen and (max-width: 540px) {
+            margin-bottom: $block-margin-bottom;
+        }
+
+        a {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: right;
+            text-decoration-line: underline;
+            color: #898989;
+        }
+    }
+}
+
+._news-grid-open {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    @media screen and (min-width: 541px) {
+        display: none !important;
+    }
+
+    ._btn {
+        @extend .btn;
+
+        min-width: 220px;
+        padding: 12px 22px;
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        background-image: url("/assets/reborn/images/pixels/2088B3.png");
+
+        &:hover, &:focus {
+            color: white;
+        }
+    }
+}

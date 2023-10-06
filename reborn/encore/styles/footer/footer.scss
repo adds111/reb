@@ -1,0 +1,193 @@
+footer {
+    @extend ._padding-lr-sides;
+    @extend ._media-lr-sides;
+    @extend ._max-width;
+    @extend ._min-width;
+
+    grid-template-columns: repeat(3, auto);
+    column-gap: 248px;
+    row-gap: 10px;
+    padding-top: 49px;
+    padding-bottom: 49px;
+    background: url("/assets/reborn/images/pixels/454545.png");
+
+    @media screen and (max-width: 1920px) {
+        column-gap: unquote("calc(217px + (100vw - 1440px) * (31 / 480))");
+    }
+
+    @media screen and (max-width: 1440px) {
+        column-gap: unquote("calc(102px + (100vw - 1140px) * (115 / 300))");
+    }
+
+    @media screen and (max-width: 1140px) {
+        column-gap: unquote("calc(10px + (100vw - 960px) * (92 / 180))");
+    }
+
+    @media screen and (max-width: 960px) {
+        column-gap: unquote("calc(10px + (100vw - 720px) * (290 / 240))");
+        grid-template-columns: repeat(2, auto);
+        row-gap: 40px;
+    }
+
+    @media screen and (max-width: 720px) {
+        column-gap: 10px;
+    }
+
+    @media screen and (max-width: 540px){
+        row-gap: 40px;
+        grid-template-columns: 1fr;
+    }
+
+    ._footer-logo {
+        @media screen and (max-width: 960px) {
+            order: 0;
+        }
+    }
+
+    ._footer-contacts {
+        row-gap: 20px;
+        margin-top: 25px;
+
+        @media screen and (max-width: 960px) {
+            order: 2;
+        }
+
+        @media screen and (max-width: 540px) {
+            order: 1;
+        }
+
+        ._contact-title, ._contact-link {
+            @media screen and (max-width: 720px) {
+                white-space: unset;
+            }
+
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            column-gap: 9px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            white-space: nowrap;
+        }
+
+        ._contact-title {
+            color: #CCCCCC;
+        }
+
+        ._contact-link {
+            color: #999999;
+        }
+    }
+
+    ._footer-connect {
+        row-gap: 16px;
+
+        @media screen and (max-width: 960px) {
+            order: 1;
+        }
+
+        @media screen and (max-width: 540px) {
+            order: 2;
+        }
+
+        ._connect-title {
+            @extend ._font-style;
+
+            font-family: 'Inter';
+            color: #BCBCBC;
+        }
+
+        ._socials {
+            justify-content: space-between;
+            column-gap: 28px;
+
+            @media screen and (max-width: 540px) {
+                justify-content: space-around;
+            }
+        }
+    }
+    ._footer-marks {
+        column-gap: 28px;
+
+        @media screen and (max-width: 960px) {
+            order: 5;
+        }
+
+        @media screen and (min-width: 541px) and (max-width: 960px) {
+            grid-column: 1 / 3;
+        }
+
+        @media screen and (max-width: 540px) {
+            order: 4;
+            justify-content: space-around;
+        }
+    }
+
+    ._footer-payment {
+        column-gap: 28px;
+
+        @media screen and (max-width: 960px) {
+            order: 5;
+        }
+
+        @media screen and (min-width: 541px) and (max-width: 960px) {
+            grid-column: 1 / 3;
+        }
+
+        @media screen and (max-width: 540px) {
+            order: 3;
+            justify-content: space-around;
+        }
+    }
+
+    ._footer-sitemap {
+        row-gap: 15px;
+
+        @media screen and (max-width: 960px) {
+            order: 2;
+        }
+
+        ._title {
+            font-weight: 700 !important;
+            color: #ECECEC !important;
+        }
+
+        ._text {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: right;
+            color: #C9C9C9;
+
+            @media screen and (max-width: 540px) {
+                text-align: left !important;
+            }
+        }
+    }
+
+    ._footer-copyright {
+        margin-top: 26px;
+
+        @media screen and (max-width: 960px) {
+            order: 6;
+        }
+
+        @media screen and (min-width: 541px) and (max-width: 960px) {
+            grid-column: 1 / 3;
+        }
+
+        p {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #CBCBCB;
+        }
+    }
+}

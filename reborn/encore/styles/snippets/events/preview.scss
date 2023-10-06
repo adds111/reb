@@ -1,0 +1,120 @@
+._events-preview {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background: url("/assets/reborn/images/pixels/EAEAEA.png");
+
+    @media screen and (max-width: 540px) {
+        overflow: hidden;
+        max-height: 380px;
+        margin-bottom: 0 !important;
+    }
+
+    &._show {
+        overflow: unset !important;
+        max-height: unset !important;
+
+        :first-child {
+            top: unset !important;
+        }
+    }
+
+    ._block-tinting {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(0deg, #EAEAEA 0%, rgba(234, 234, 234, 0.00) 100%);
+
+        @media screen and (min-width: 541px) {
+            display: none;
+        }
+    }
+
+    ._events-container {
+        display: inherit;
+        width: inherit;
+        flex-direction: column;
+
+        ._preview-title {
+            margin-bottom: 29px;
+
+            h1 {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 23px;
+                line-height: 28px;
+                text-transform: uppercase;
+                color: #000000;
+            }
+        }
+
+        ._event-item {
+            display: grid;
+            grid-template-columns: 15% 80%;
+            column-gap: 5%;
+            align-items: center;
+            margin-bottom: 36px;
+
+            @media screen and (max-width: 1140px) {
+                display: flex;
+            }
+
+            ._event-date {
+                min-width: 125px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18px;
+                color: #000000;
+            }
+
+            ._event-title a {
+                display: block;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 23px;
+                color: #0876A6;
+            }
+        }
+    }
+}
+
+._events-preview-open {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 46px;
+
+    @media screen and (min-width: 541px) {
+        display: none !important;
+    }
+
+    ._btn {
+        @extend .btn;
+
+        min-width: 220px;
+        position: absolute;
+        top: -25px;
+        padding: 12px 22px;
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        background-image: url("/assets/reborn/images/pixels/2088B3.png");
+
+        &:hover, &:focus {
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+<header class="d-flex w-100 position-relative">
+    <div class="_navbar d-inherit height-inherit justify-content-between align-items-center position-fixed w-100 m-auto">
+        <div class="_navbar-logo d-flex position-relative align-items-center">
+            <a class="_btn _navbar-burger" data-fl-show="navbarCanvas">
+                <img src="/assets/reborn/images/objects/header/burger.svg" alt="burger">
+            </a>
+            <a class="_logo-block" href="/">
+                <img src="/assets/reborn/images/logo.svg" alt="logo">
+            </a>
+        </div>
+        <div class="_navbar-attachments d-grid">
+            <div class="_contacts d-flex flex-nowrap align-items-center">
+                <a class="_link text-right" href="mailto:mail@fluid-line.ru">mail@fluid-line.ru</a>
+                <a class="_link text-right" href="tel:+74959844100">+7 (495) 984-41-00</a>
+            </div>
+            <div class="_services d-flex flex-nowrap">
+                <div>
+                    <a class="_services-cart _btn d-block position-relative" data-fl-show="shoppingCart">
+                        <img class="position-relative" src="/assets/reborn/images/objects/header/cart.svg" alt="cart">
+                    </a>
+                    {{nd_shoppingCart}}
+                </div>
+                <div class="profile d-inherit">
+                    <a href="/">
+                        <img src="/assets/reborn/images/chunks/profile/person.svg" alt="profile">
+                    </a>
+                    <div class="_auth d-grid align-items-center">
+                        <a href="/">
+                            Вход
+                        </a>
+                        <a href="/">
+                            Регистрация
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="_navbar-mini d-flex position-absolute c-pointer">
+            <div class="_navigation d-flex">
+                [[navigation]]
+            </div>
+            <div class="_navbar-search position-relative">
+                <input class="_search-input" data-fl-target="headerAnswers" type="text">
+                <a class="d-block" href="#">
+                    <img class="position-absolute m-auto" src="/assets/reborn/images/objects/header/search.svg" alt="search">
+                </a>
+                <div class="_answers d-flex flex-column position-absolute h-auto" id="headerAnswers"></div>
+            </div>
+        </div>
+        <div class="_navbar-canvas" id="navbarCanvas">
+            [[navigationCanvas]]
+        </div>
+        <div class="_shopping-cart-button">
+            <a href="/?id=6577220" class="position-relative">
+                <p class="position-absolute start-100 translate-middle badge rounded-pill bg-dark">
+                    <span class="_total-count-value">0</span>
+                </p>
+                <img src="/assets/reborn/images/objects/product/cart.svg" alt="CART">
+            </a>
+        </div>
+        <div class="_profile-button">
+            <a href="/">
+                <img src="/assets/reborn/images/chunks/profile/person.svg" alt="profile">
+            </a>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,115 @@
+._model-view {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+._model-view._show {
+  display: flex !important;
+}
+._model-view ._model-tinting {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  z-index: -1;
+}
+._model-view ._model-info {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: 394px;
+  height: 326px;
+  border-radius: 19px;
+  background: #EBEBEB;
+}
+._model-view ._model-info ._info-header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+._model-view ._model-info ._info-header ._btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #0876A6;
+  width: 26px;
+  height: 26px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+._model-view ._model-info ._info-header ._btn img {
+  width: 22px;
+  vertical-align: unset;
+  transition: 0.25s;
+}
+._model-view ._model-info ._info-header ._btn:hover img {
+  transform: scale(1.1);
+}
+._model-view ._model-info ._info-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+._model-view ._model-info ._info-body img {
+  width: 169px;
+  height: 150px;
+}
+._model-view ._model-info ._info-footer {
+  display: grid;
+  margin-top: 2em;
+  grid-template-columns: repeat(2, 50%);
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
+}
+._model-view ._model-info ._info-footer p {
+  margin: 0;
+  color: #333;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+._model-view ._model-info ._info-footer select {
+  max-width: 170px;
+  color: #A6A6A6;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+._model-view ._model-info ._info-footer select option {
+  color: #A6A6A6;
+}
+._model-view ._model-info ._info-footer ._button-block {
+  display: flex;
+  justify-content: center;
+  max-width: 170px;
+}
+._model-view ._model-info ._info-footer ._button-block a {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  border: 0;
+  padding: 3px 39px;
+  border-radius: 6px;
+  background: #0876A6;
+  text-decoration: none;
+}/*# sourceMappingURL=modelView.css.map */

@@ -1,0 +1,12 @@
+._climb {
+  right: 72px;
+  bottom: 72px;
+  transition: 0.5s;
+}
+._climb._hidden {
+  opacity: 0;
+  transition: 0.5s;
+}
+._climb._hidden._none {
+  display: none;
+}/*# sourceMappingURL=climb.css.map */

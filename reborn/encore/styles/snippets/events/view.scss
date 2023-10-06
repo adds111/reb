@@ -1,0 +1,21 @@
+._events-view {
+    @extend ._margin-bottom;
+    @extend ._margin-lr-sides;
+    @extend ._padding-lr-sides;
+    @extend ._media-lr-sides_node;
+    @extend ._max-width;
+    @extend ._min-width;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+
+    ._event-item {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        column-gap: 1.5em;
+        border-radius: 12px;
+        border: 1px solid #e4e4e4;
+        padding: 22px 24px;
+    }
+}

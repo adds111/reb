@@ -1,0 +1,720 @@
+.c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c .ut_ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+#cl18 {
+  background-color: rgba(150, 150, 150, 0.2);
+  box-sizing: border-box;
+}
+
+#cl18 p {
+  color: #000;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+#cl20 {
+  background-color: rgba(150, 150, 150, 0.2);
+  font-size: 13px;
+}
+
+#cl20 p {
+  color: #000;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  padding: 20px;
+  text-align: justify;
+  padding-top: 10px;
+}
+
+.ffff:before {
+  content: " ";
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: sub;
+}
+
+/* spor */
+.blu:before {
+  margin-right: 10px;
+  width: 13px;
+  height: 13px;
+  background-color: #008;
+}
+
+.gre:before {
+  margin-right: 10px;
+  width: 13px;
+  height: 13px;
+  background-color: #080;
+}
+
+.ora:before {
+  margin-right: 10px;
+  width: 13px;
+  height: 13px;
+  background-color: #f5a900;
+}
+
+.bla:before {
+  margin-right: 10px;
+  width: 13px;
+  height: 13px;
+  background-color: #000;
+}
+
+.red:before {
+  margin-right: 10px;
+  width: 13px;
+  height: 13px;
+  background-color: #F00;
+}
+
+.sporc:after, .qws:after {
+  padding: 2px;
+  border-radius: 50%;
+  background: #bf5e5e url("/assets/snippets/product/img/qw.svg");
+  color: #fff;
+  width: 6px;
+  height: 6px;
+  line-height: 7px;
+  text-align: center;
+  border: 1px solid #ab3838;
+  z-index: 660;
+}
+
+.content {
+  background: none !important;
+  padding-top: 0px !important;
+}
+
+.boxc {
+  width: 13px;
+  height: 13px;
+  vertical-align: bottom;
+  display: inline-block;
+  margin: 2px 5px;
+  border-radius: 5px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.ablu {
+  background-color: #008;
+}
+
+.agre {
+  background-color: #080;
+}
+
+.aora {
+  background-color: #f5a900;
+}
+
+.abla {
+  background-color: #000;
+}
+
+.ared {
+  background-color: #F00;
+}
+
+.sporc:after, .qws:after {
+  content: "?";
+  position: absolute;
+  right: -7px;
+  top: -4px;
+  font-size: 8px;
+  padding: 2px;
+  border-radius: 50%;
+  background: #bf5e5e;
+  color: #fff;
+  width: 6px;
+  height: 6px;
+  line-height: 7px;
+  text-align: center;
+  border: 1px solid #ab3838;
+  z-index: 10;
+}
+
+.CalculationType1 .ffff {
+  background-color: #400;
+}
+
+.link {
+  color: #0096BB;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: #000;
+}
+
+.txtblu {
+  color: #008;
+}
+
+.txtgre {
+  color: #080;
+}
+
+.txtora {
+  color: #f5a900;
+}
+
+.txtbla {
+  color: #000;
+}
+
+.txtred {
+  color: #F00;
+}
+
+.bcblu {
+  background: #008;
+  color: #fff;
+}
+
+.bcgre {
+  background: #080;
+  color: #fff;
+}
+
+.bcora {
+  background: #f5a900;
+  color: #000;
+}
+
+.bcbla {
+  background: #000;
+  color: #fff;
+}
+
+.bcred {
+  background: #F00;
+  color: #fff;
+}
+
+.bcspor {
+  background: #ccc;
+  color: #000;
+}
+
+.bcmx {
+  background: #e2d292;
+}
+
+.hidenboxs .ffff:before {
+  display: none;
+}
+
+.cutA {
+  max-width: 300px;
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.matImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 110px;
+  height: 110px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.ishow {
+  opacity: 1;
+}
+
+.slider {
+  width: 110px;
+  height: 110px;
+  border: 10px solid #fff;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: block;
+}
+
+.sliders_button {
+  margin-top: 4px;
+  display: inline-block;
+  padding: 2px;
+  background: #fff;
+  border-radius: 5px;
+  height: 13px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.ring {
+  width: 8px;
+  height: 8px;
+  background: #a0a0a0;
+  margin: 2px;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.rselect {
+  background: #222;
+}
+
+.slide .rselect {
+  background: #0096BB;
+}
+
+#h1srd {
+  background: #a7d5e1;
+  border-radius: 3px;
+}
+
+.p3 {
+  padding: 3px;
+}
+
+.br3 {
+  border-radius: 3px;
+}
+
+.ilb63 {
+  display: inline-block;
+  max-width: 600px;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.bttl {
+  margin-bottom: 5px;
+  font-weight: 100;
+}
+
+.mtrlst {
+  cursor: pointer;
+  padding: 1px 4px;
+  background: #ddd;
+  border-radius: 3px;
+  margin: 3px 4px;
+  display: inline-block;
+  border: 1px solid #c3c3c3;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.mtrlst:hover {
+  background: #e8e8e8;
+}
+
+.selectmee {
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.selectmee:hover {
+  color: #fff;
+}
+
+#v0 .selectmee {
+  background: #000;
+  color: #fff;
+}
+
+#v1 .selectmee {
+  background: #F00;
+  color: #fff;
+}
+
+#v2 .selectmee {
+  background: #f5a900;
+  color: #000;
+}
+
+#v3 .selectmee {
+  background: #008;
+  color: #fff;
+}
+
+#v4 .selectmee {
+  background: #080;
+  color: #fff;
+}
+
+#v0 .dopis {
+  color: #000;
+}
+
+#v1 .dopis {
+  color: #F00;
+}
+
+#v2 .dopis {
+  color: #f5a900;
+}
+
+#v3 .dopis {
+  color: #008;
+}
+
+#v4 .dopis {
+  color: #080;
+}
+
+.h {
+  min-height: 20px;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: -1px;
+}
+
+.dopis {
+  display: inline-block;
+  color: #444;
+  font-weight: 600;
+  font-size: 13px;
+  width: 140px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.v {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 150px);
+}
+
+.option_btn {
+  margin: 5px;
+  background: #0096bb;
+  border: none;
+  padding: 7px;
+  box-sizing: border-box;
+  width: calc(50% - 13px);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.option_btn:hover {
+  background: #0bafd8;
+}
+
+.disabl_btn {
+  background: #ccc;
+}
+
+#sel {
+  width: 300px;
+  padding: 5px;
+  font-weight: 700;
+  font-family: tahoma;
+  color: #333;
+  border-radius: 5px;
+}
+
+option {
+  padding: 10px;
+  font-family: tahoma;
+  color: #333;
+  font-size: 120%;
+  border-radius: 5px;
+}
+
+option:hover {
+  background-color: #5897fb;
+}
+
+option:checked {
+  background: #eee;
+}
+
+.l {
+  text-align: left;
+}
+
+#sel5 {
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 300px;
+  cursor: pointer;
+  font-family: tahoma;
+  outline: none;
+  position: relative;
+  background: #fff;
+  color: #222;
+}
+
+#sel5 .title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #333;
+}
+
+.list {
+  border: 1px solid #ccc;
+  display: inline-block;
+  position: absolute;
+  left: -2px;
+  top: 100%;
+  width: 400px;
+  border-radius: 3px;
+  visibility: hidden;
+  opacity: 0;
+  background: #fff;
+  color: #222;
+  text-align: left;
+  z-index: 100;
+}
+
+.focus .list {
+  visibility: visible;
+  opacity: 1;
+}
+
+.list li {
+  list-style: none;
+  padding: 4px 6px;
+  cursor: pointer;
+  font-weight: 100;
+  padding-left: 15px;
+}
+
+.list li:hover {
+  background: #5897fb;
+  color: #fff;
+}
+
+.list ol {
+  padding: 0;
+  margin: 0;
+}
+
+.list .btn {
+  margin: 2px;
+  padding: 5px 10px;
+  background: #0096BB;
+  border: none;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+#sel_search {
+  width: calc(100% - 5px);
+  box-sizing: border-box;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  border-radius: 0;
+  margin: 5px;
+}
+
+.fcx {
+  border-radius: 5px;
+}
+
+.focus {
+  border-radius: 5px 5px 0 0;
+  background: #eee;
+}
+
+.fhead {
+  font-weight: 600;
+  padding: 5px;
+}
+
+.selfhw {
+  background: #ccc;
+}
+
+.scroll {
+  max-height: 350px;
+  overflow: auto;
+}
+
+.load {
+  margin: 50px auto;
+  padding: 20px;
+  background: url("https://a.deviantart.net/avatars/o/r/orangeypanda.gif") 50% 50% no-repeat;
+}
+
+.p20 {
+  padding: 20px;
+}
+
+.s_l {
+  background: rgba(0, 150, 187, 0.5333333333);
+}
+
+.hide {
+  display: none;
+}
+
+.qwes {
+  position: absolute;
+  right: -7px;
+  top: -4px;
+  font-size: 8px;
+  padding: 2px;
+  border-radius: 50%;
+  background: #bf5e5e;
+  color: #fff;
+  width: 6px;
+  height: 6px;
+  line-height: 7px;
+  text-align: center;
+  border: 1px solid #ab3838;
+  z-index: 10;
+}
+
+.selectmee .qwes {
+  background-color: inherit;
+  color: inherit;
+  border: inherit;
+}
+
+.in-line {
+  display: inline-block;
+}
+
+.dopqinf {
+  position: absolute;
+  bottom: 100%;
+  padding: 10px;
+  background: #fff;
+  z-index: 15;
+  border: 1px solid #8c8c8c;
+  width: 250px;
+  left: 50%;
+  margin-left: -135px;
+  opacity: 0;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+  transition: all 0.3s;
+  margin-bottom: 0px;
+  pointer-events: none;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.dopqinf:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  background: url("/assets/snippets/product/img/v.svg") top center no-repeat;
+  background-size: cover;
+  margin-top: -3px;
+  margin-left: -5px;
+}
+
+.fline {
+  margin: 0px 6px;
+  background: #f1f1f1;
+  margin: 2px;
+}
+
+.cb {
+  color: #000;
+}
+
+.mtrlst:hover .dopqinf {
+  opacity: 1;
+  visibility: visible;
+  margin-bottom: 5px;
+}
+
+.block {
+  display: block;
+}
+
+.set_box {
+  margin-right: 10px;
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  position: relative;
+  border-radius: 3px;
+}
+
+.blaklk {
+  background: #000;
+}
+
+.redklk {
+  background: #F00;
+}
+
+.oraklk {
+  background: #f5a900;
+}
+
+.bluklk {
+  background: #008;
+}
+
+.greklk {
+  background: #080;
+}
+
+._link {
+  padding: 2px;
+}
+
+.tags {
+  max-height: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
+  text-align: justify;
+}
+
+.v a {
+  color: #444;
+}
+
+#hiden_text {
+  display: none;
+}
+
+#SredaWiki {
+  padding: 20px;
+  text-align: justify;
+  background-color: rgba(150, 150, 150, 0.2);
+  padding-bottom: 10px;
+}/*# sourceMappingURL=corrosion-resistance-table.css.map */

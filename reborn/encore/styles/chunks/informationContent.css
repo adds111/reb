@@ -1,0 +1,50 @@
+._information-view {
+  display: flex;
+  flex-direction: column;
+}
+._information-view ._title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 60px;
+}
+._information-view ._i-g {
+  display: flex;
+}
+._information-view ._i-g ul {
+  width: 100%;
+  -moz-columns: 2;
+       columns: 2;
+  padding-block-start: 10px;
+  margin: 0;
+}
+@media screen and (max-width: 960px) {
+  ._information-view ._i-g ul {
+    -moz-columns: unset;
+         columns: unset;
+  }
+}
+._information-view ._i-g ul li {
+  padding: 9px 0;
+}
+._information-view ._i-g ._text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 30px;
+}
+._information-view ._i-g ._text a {
+  color: #0B0B0B;
+}
+._information-view ._i-g ._text:hover {
+  cursor: pointer;
+  color: #0F6D9C;
+}
+._information-view ._i-g ._text + ._text {
+  margin-top: 16px;
+}/*# sourceMappingURL=informationContent.css.map */

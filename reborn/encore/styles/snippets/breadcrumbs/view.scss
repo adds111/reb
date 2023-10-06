@@ -1,0 +1,33 @@
+._breadcrumbs-view {
+    @extend ._margin-bottom;
+    @extend ._padding-lr-sides;
+    @extend ._media-lr-sides;
+    @extend ._max-width;
+    @extend ._min-width;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 1em;
+
+    ._crumbs-item, ._crumbs-delimiter {
+        color: #212121;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20.23px;
+    }
+
+    ._crumbs-item {
+        text-align: justify;
+        text-decoration: none;
+        padding-bottom: .25px;
+        border-bottom: .5px solid black;
+    }
+
+    ._crumbs-delimiter {
+        padding: 0 4px;
+        margin: 0;
+    }
+}

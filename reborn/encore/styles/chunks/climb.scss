@@ -1,0 +1,14 @@
+._climb {
+    right: 72px;
+    bottom: 72px;
+    transition: .5s;
+
+    &._hidden {
+        opacity: 0;
+        transition: .5s;
+
+        &._none {
+            display: none;
+        }
+    }
+}

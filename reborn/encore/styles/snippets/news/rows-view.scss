@@ -1,0 +1,109 @@
+._news-rows {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    ._rows-item {
+        display: grid;
+        grid-template-columns: 234px auto;
+        column-gap: 55px;
+        padding: 18px 9px;
+        background: #FFFFFF;
+        width: 100%;
+        transition: .5s;
+
+        @media screen and (min-width: 633px) {
+            border: 1px solid #ECECEC;
+            box-shadow: 1px 2px 13px rgba(0, 0, 0, 0.02);
+            border-radius: 7px;
+        }
+
+        @media screen and (max-width: 1052px) {
+            column-gap: 25px;
+        }
+
+        @media screen and (max-width: 720px) {
+            padding: 18px 27px;
+        }
+
+        @media screen and (max-width: 632px) {
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 2em;
+        }
+
+        &:hover {
+            background-color: #ECECEC;
+            transition: .5s;
+        }
+
+        ._news {
+            display: flex;
+            column-gap: 55px;
+
+            @media screen and (max-width: 720px) {
+                justify-content: center;
+                flex-direction: column;
+                row-gap: 35px;
+            }
+
+            @media screen and (max-width: 632px) {
+                border: 1px solid #ECECEC;
+                box-shadow: 1px 2px 13px rgba(0, 0, 0, 0.02);
+                border-radius: 7px;
+                padding: 18px 27px;
+            }
+
+            &-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 7px;
+                width: 234px;
+                height: 137px;
+                overflow: hidden;
+
+                @media screen and (max-width: 720px) {
+                    width: unset;
+                }
+
+                img {
+                    max-width: 394px;
+                    max-height: 137px;
+                }
+            }
+
+            &-content {
+                display: flex;
+                flex-direction: column;
+
+                ._time {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #999999;
+                }
+
+                ._longtitle {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 22px;
+                    color: #000000;
+                }
+
+                ._description {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: #7B7B7B;
+                }
+            }
+        }
+    }
+}

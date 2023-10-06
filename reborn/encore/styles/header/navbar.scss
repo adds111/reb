@@ -1,0 +1,166 @@
+header {
+    background-image: url("/assets/reborn/images/pixels/0876A6.png");
+    height: 69px;
+
+    ._navbar {
+        background-image: url("/assets/reborn/images/pixels/0876A6.png");
+        z-index: 1;
+
+        ._navbar-container {
+            @media screen and (min-width: 1921px) {
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            display: inherit;
+            width: inherit;
+            justify-content: inherit;
+            align-items: inherit;
+        }
+
+        ._navbar-burger {
+            @media screen and (min-width: 1141px) {
+                display: none;
+            }
+        }
+
+        ._navbar-logo {
+            column-gap: 30px;
+
+            @media screen and (max-width: 870px) {
+                column-gap: 35px;
+            }
+
+            @media screen and (max-width: 632px) {
+                column-gap: 24px;
+            }
+
+            @media screen and (max-width: 510px) {
+                width: 100%;
+                justify-content: center;
+            }
+
+            ._navbar-burger {
+                @media screen and (max-width: 510px) {
+                    display: flex;
+                    position: absolute;
+                    left: 0;
+
+                    img {
+                        display: block;
+                    }
+                }
+            }
+
+            ._logo-block {
+                @media screen and (max-width: 1052px) {
+                    width: 179px;
+                }
+
+                img {
+                    width: inherit;
+                }
+            }
+        }
+
+        ._navbar-attachments {
+            grid-template-columns: repeat(2, auto);
+            column-gap: 80px;
+
+            @media screen and (max-width: 1330px) {
+                column-gap: 48px;
+            }
+
+            @media screen and (max-width: 1052px) {
+                column-gap: 30px;
+            }
+
+            @media screen and (max-width: 960px) {
+                column-gap: 10px;
+            }
+
+            @media screen and (max-width: 870px) {
+                grid-template-columns: 1fr;
+            }
+
+            @media screen and (max-width: 510px) {
+                display: none !important;
+            }
+
+            ._contacts {
+                column-gap: 40px;
+
+                @media screen and (max-width: 1052px) {
+                    column-gap: 11px;
+                }
+
+                @media screen and (max-width: 870px) {
+                    display: none !important;
+                }
+
+                ._link {
+                    font-family: Inter;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 18px;
+                    letter-spacing: 1px;
+                    color: #FFFFFF;
+                    white-space: nowrap;
+                }
+            }
+
+            ._services {
+                column-gap: 38px;
+
+                @media screen and (max-width: 560px) {
+                    column-gap: 20px;
+                }
+
+                ._services-cart {
+                    cursor: pointer;
+
+                    img {
+                        z-index: 3;
+                    }
+                }
+
+                .profile {
+                    flex-wrap: inherit;
+
+                    ._auth {
+                        grid-template-columns: repeat(2, auto);
+
+                        :first-child {
+                            border-right: 1px solid white;
+                        }
+
+                        :last-child {
+                            padding-right: 0;
+                        }
+
+                        a {
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #FFFFFF;
+                            padding: 0 8px;
+
+                            @media screen and (max-width: 1052px) {
+                                padding: 0 6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Navbar Mini */
+    @import "navbarMini";
+
+    /* Navbar Canvas */
+    @import "navbarCanvas";
+}

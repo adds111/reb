@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="/assets/snippets/product/calcflow3/fluid_input/input3-ie.js"></script>
+	<link rel="stylesheet" href="/assets/snippets/product/calcflow3/fluid_input/input3.css">
+</head>
+<body>
+	
+	// code here<br>
+	// https:fluid-line.ru/assets/snippets/product/calcflow3/fluid_input/show.html<br><br><br>
+
+	<form id="f">
+		<input type="number" value="100" class="hd" title="Давление" measure="pressure" unit="br" name="temp" description="Давление среды на входе в клапан">
+		<input type="number" value="120" class="hd" title="Температура" measure="temp" unit="c" name="pressure" description="Температура рабочей среды">
+		
+		<input type="submit" value="Отправить">
+	</form>
+	
+	<script>
+		fluid_input.createInputFromClass('hd', {inline: true, auto_translate: true} ,function(data, th, unit, unit2){ 
+			console.log(data);
+			console.log(th);
+			console.log(unit);
+			console.log(unit2);
+		});
+
+		$('#f').on('submit', function(){
+			
+			console.log( fluid_input.serializator($(this).serializeArray()) );
+			
+			return false;
+		});
+
+	</script>
+</body>
+</html>

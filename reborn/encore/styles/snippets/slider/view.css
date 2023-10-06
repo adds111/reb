@@ -1,0 +1,26 @@
+#siteSlider .carousel-inner {
+  height: inherit;
+}
+#siteSlider .carousel-inner .carousel-item {
+  height: inherit;
+}
+#siteSlider .carousel-inner .carousel-item ._item-absolute {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  overflow: hidden;
+}
+#siteSlider .carousel-inner .carousel-item ._item-absolute img {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+}
+@media screen and (max-width: 960px) {
+  #siteSlider .carousel-inner .carousel-item ._item-absolute img {
+    max-width: calc(1520px + (100vw - 375px) * (400 / 585));
+  }
+}
+#siteSlider .carousel-inner .carousel-item ._item-empty {
+  height: 50px;
+}/*# sourceMappingURL=view.css.map */

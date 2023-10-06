@@ -1,0 +1,43 @@
+<div class="_product-cart" id="productCart">
+    <div class="_cart-tinting _btn" data-fl-close="productCart"></div>
+    <div class="_cart-info">
+        <div class="_info-header">
+            <p>Информация о товаре</p>
+            <a class="_btn" data-fl-close="productCart">
+                <img src="/assets/reborn/images/objects/product/button.svg" alt="X">
+            </a>
+        </div>
+        <form class="_info-body" id="pushToCart">
+            <div class="_body-group">
+                <label>Код продукта:</label>
+                <p id="_products-pagetitle"></p>
+                <input class="_product-input _products-pagetitle" type="hidden" name="_products-pagetitle" readonly>
+            </div>
+            <div class="_body-group">
+                <label>Цена:</label>
+                <p id="_products-price"></p>
+            </div>
+            <div class="_attachments-group"></div>
+            <div class="_body-group">
+                <span>Количество:</span>
+                <div class="_count-group">
+                    <input class="_product-input _products-count" type="number" minlength="1" maxlength="3" min="1" max="999" name="_products-count" placeholder="шт.">
+                    <label class="_products-count-label">мин. заказ от 1 шт.</label>
+                </div>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="_products-new" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Добавить отдельной позицией
+                </label>
+            </div>
+            <textarea class="form-control" name="_products-comment" rows="3" placeholder="Комментарий к позиции"></textarea>
+            <div class="_btn-block">
+                <button class="_btn" type="submit">В корзину</button>
+            </div>
+        </form>
+        <div class="_info-footer">
+            <p>Расчет производится в рублях, с учетом курса доллара в момент подтверждения заказа.</p>
+        </div>
+    </div>
+</div>
